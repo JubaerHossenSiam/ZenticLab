@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Zentic Lab E-Commerce</title>
+
+<style>/* Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --Violet: #7132ff;
+  --Indigo: #200093;
+  --Dark-Purple: #0a003d;
+  --White: #ffffff;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#4a4565;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,p,ul{margin:0}
+.zl-nav:hover{color:#7132ff}
+.zl-dd{position:relative}
+.zl-dd-menu{display:none;position:absolute;top:100%;left:-20px;padding-top:14px;z-index:10}
+.zl-dd:hover .zl-dd-menu,.zl-dd:focus-within .zl-dd-menu{display:block}
+.zl-dd-item:hover{background:#f6f3ff}
+.zl-btn{transition:background .2s}
+.zl-btn:hover{background:#6228e6 !important}
+.zl-btn-light{transition:color .2s}
+.zl-btn-light:hover{color:#7132ff !important}
+.zl-lift{transition:border-color .25s ease}
+.zl-lift:hover{border-color:#c9b6fa !important}
+.zl-btn,.zl-btn-light{transition:background .2s,color .2s}
+.zl-qa{position:relative;overflow:hidden;border-radius:24px;background:#ffffff;border:1px solid #e4dbfb}
+.zl-qa-t{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.zl-qa-btn{cursor:pointer;border-radius:8px}
+.zl-qa-t:focus-visible ~ div .zl-qa-btn{outline:3px solid #cbbaf7;outline-offset:4px}
+.zl-qa-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:#ffffff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.zl-qa-close:hover{background:#f6f5fb}
+.zl-qa-back{position:absolute;left:0;top:0;right:0;bottom:0;background:#ebe8f5;display:flex;flex-direction:column;justify-content:center;opacity:0;transition:opacity .2s ease;pointer-events:none;box-sizing:border-box}
+.zl-qa-t:checked ~ .zl-qa-back{opacity:1;pointer-events:auto}
+.zl-qa-ill{flex:none}
+.zl-qa-link:hover{opacity:.85}
+.zl-btn-outline{transition:background .2s,color .2s}
+.zl-btn-outline:hover{background:#200093 !important;color:#ffffff !important}
+.zl-link:hover{color:#7132ff !important}
+.zl-card{transition:box-shadow .2s,transform .2s}
+.zl-card:hover{}
+.zl-foot-link:hover{color:#7132ff !important}
+.zl-social{transition:opacity .2s}
+.zl-social:hover{opacity:.88}
+a:focus-visible,button:focus-visible{outline:3px solid #7132ff;outline-offset:3px}
+.zl-faq{background:#ffffff;border:1px solid #e4dbfb;border-radius:16px;transition:border-color .2s,box-shadow .2s}
+.zl-faq:hover{border-color:#cdbcff}
+.zl-faq[open]{border-color:#bfa8ff;box-shadow:0 12px 30px rgba(32,0,147,.08)}
+.zl-faq-q{list-style:none;display:flex;align-items:center;gap:16px;padding:18px 22px;cursor:pointer;border-radius:16px}
+.zl-faq-q::-webkit-details-marker{display:none}
+.zl-faq-q:focus-visible{outline:3px solid #7132ff;outline-offset:2px}
+.zl-faq-icon{width:48px;height:48px;border-radius:14px;background:#efe9ff;display:flex;align-items:center;justify-content:center;flex:none}
+.zl-faq-title{flex:1;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:18px;line-height:1.45;font-weight:700;color:#0a003d}
+.zl-faq-chev{width:28px;height:28px;color:#7132ff;display:flex;align-items:center;justify-content:center;flex:none}
+.zl-vline{transition:opacity .15s}
+.zl-faq[open] .zl-vline{opacity:0}
+.zl-faq-a{padding:0 22px 24px 82px}
+.zl-faq-a p{font-size:15px;line-height:1.6;color:#4a4565}
+@media (max-width:640px){.zl-h1{font-size:38px !important}.zl-h2{font-size:30px !important}.zl-faq-a{padding-left:22px}}
+.zl-fq{position:relative;background:#ffffff;border:1px solid #e4dbfb;border-radius:24px;padding:28px 24px}
+.zl-fq:has(.zl-fq-t:checked){background:#ebe8f5;border-color:#d2cce9}
+.zl-fq-t{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.zl-fq-head{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.zl-fq-btn{cursor:pointer;flex:none;border-radius:8px;font-size:14px;font-weight:600;color:#200093;white-space:nowrap}
+.zl-fq-open,.zl-fq-hide{display:inline-flex;align-items:center;gap:8px}
+.zl-fq-hide{display:none}
+.zl-fq-t:checked ~ .zl-fq-head .zl-fq-open{display:none}
+.zl-fq-t:checked ~ .zl-fq-head .zl-fq-hide{display:inline-flex}
+.zl-fq-a{display:none;margin-top:16px;max-width:760px}
+.zl-fq-t:checked ~ .zl-fq-a{display:block}
+.zl-fq-t:focus-visible ~ .zl-fq-head .zl-fq-btn{outline:3px solid #cbbaf7;outline-offset:4px}
+</style>
+
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: var(--White, #ffffff)">
+
+<!-- 1. HEADER -->
+<header style="background: var(--White, #ffffff); border-bottom: 1px solid #ece5ff">
+<div style="max-width: 1280px; margin: 0 auto; padding: 18px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<a href="index.html" aria-label="Zentic Lab home" style="display: block; line-height: 0">
+<svg viewBox="398 872 1205 276" width="190" height="44" role="img" aria-label="Zentic Lab" style="display: block">
+<g fill="#7132ff">
+<path d="M812.04,993.26h98.18v25.79h-141.1v-25.79l89.13-76.04,7.31-5.58h-95.87v-25.8h138.6v25.8l-89.13,76.23-7.12,5.39Z"></path>
+<path d="M962.57,992.49v-26.76h95.48v-26.19h-95.48v-27.14h95.48v-26.56h-124.54v133.21h124.54v-26.57h-95.48Z"></path>
+<polygon points="1198.04 885.84 1227.1 885.84 1227.1 1044.67 1106.79 930.31 1106.79 1019.05 1077.91 1019.05 1077.91 860.17 1198.04 974.59 1198.04 885.84"></polygon>
+<path d="M1245.82,885.84v27.71h51.77v105.5h29.64v-105.5h54.48v-27.71h-135.89Z"></path>
+<path d="M1400.69,1019.05v-133.21h29.45v133.21h-29.45Z"></path>
+<path d="M1596.65,993.84h-73.99c-26.18,0-41.58-16.55-41.77-41.39v-.19c0-24.45,15.59-41.2,41.77-41.2h73.99v-26.95h-73.99c-44.47,0-71.03,26.95-71.03,68.15v.19c0,41.39,26.57,68.34,71.03,68.34h73.99v-26.95Z"></path>
+<path d="M726.97,879.61l-136.28,201.09h-50.41l117.89-165.44h-128.7c-41.77,0-75.63,33.86-75.63,75.63v44.07l-35.65,35.65v-85.17c0-58.45,47.38-105.83,105.83-105.83h202.96Z"></path>
+</g>
+<g fill="#200093">
+<path d="M781.09,1128.82v-85.39h-11.98v96.39h103.53l8.36-11.01h-99.92Z"></path>
+<path d="M1051.59,1139.82h-13.09l-18.39-24.38h-95.14l-18.39,24.38h-13.09l73.27-96.39h11.42l73.41,96.39ZM972.61,1053.19l-40.53,52.79h80.93l-40.39-52.79Z"></path>
+<path d="M1213.04,1113.92c0,17.69-12.26,25.91-34.96,25.91h-106.14v-96.39h100.85c23.12,0,34.96,7.8,34.96,24.79,0,12.81-6.69,19.64-19.78,22.01,15.88,1.53,25.07,8.36,25.07,23.68ZM1083.5,1052.91v33.15h89.15c15.88,0,23.54-5.02,23.54-16.58s-7.8-16.58-23.4-16.58h-89.29ZM1083.5,1130.35h94.58c15.74,0,23.4-5.29,23.4-17.55s-7.52-17.55-23.68-17.55h-94.3v35.1Z"></path>
+<path d="M403.35,1139.83l147.61-201.09h50.41l-124.63,165.44h124.11c41.77,0,75.63-33.86,75.63-75.63v-35.15l35.65-35.65v76.25c0,58.45-47.38,105.83-105.83,105.83h-202.96Z"></path>
+</g>
+</svg>
+</a>
+<nav aria-label="Main" style="display: flex; align-items: center; gap: 40px">
+<div class="zl-dd">
+<a class="zl-nav" href="services.html" style="display: inline-flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 600; color: #200093; padding: 8px 0">Services
+<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-7 9z"></path></svg>
+</a>
+<div class="zl-dd-menu">
+<div style="background: #ffffff; border: 1px solid #e4dbfb; border-radius: 16px; padding: 8px; width: 340px; box-sizing: border-box; box-shadow: 0 16px 40px rgba(10,0,61,.12); display: flex; flex-direction: column; gap: 2px">
+<a class="zl-dd-item" href="ecommerce.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle><path d="M2 3h3l2.6 12.4a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L21 7H6"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">E-Commerce Website</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Sell your products online</span></span></a>
+<a class="zl-dd-item" href="business.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Business Website</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Show your business and get more leads</span></span></a>
+</div>
+</div>
+</div>
+<div class="zl-dd">
+<a class="zl-nav" href="hosting-care.html" style="display: inline-flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 500; color: var(--Dark-Purple, #0a003d); padding: 8px 0">Hosting &amp; Care
+<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-7 9z"></path></svg>
+</a>
+<div class="zl-dd-menu">
+<div style="background: #ffffff; border: 1px solid #e4dbfb; border-radius: 16px; padding: 8px; width: 340px; box-sizing: border-box; box-shadow: 0 16px 40px rgba(10,0,61,.12); display: flex; flex-direction: column; gap: 2px">
+<a class="zl-dd-item" href="domain-hosting-plans.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><rect x="2" y="3" width="20" height="8" rx="2"></rect><rect x="2" y="13" width="20" height="8" rx="2"></rect><path d="M6 7h.01M6 17h.01"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Domain &amp; Hosting Plans</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Keep your website online and fast</span></span></a>
+<a class="zl-dd-item" href="content-update-plans.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M17 3a2.850 2.830 0 1 1 4 4L7.500 20.500 2 22l1.500-5.500z"></path><path d="M15 5l4 4"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Content Update Plans</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Text, photo and product changes</span></span></a>
+<a class="zl-dd-item" href="security-maintenance-plans.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Security &amp; Maintenance Plans</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Updates, backups and security checks</span></span></a>
+</div>
+</div>
+</div>
+<a class="zl-nav" href="about.html" style="font-size: 16px; font-weight: 500; color: var(--Dark-Purple, #0a003d); padding: 8px 0">About Us</a>
+<a class="zl-nav" href="contact.html" style="font-size: 16px; font-weight: 500; color: var(--Dark-Purple, #0a003d); padding: 8px 0">Contact</a>
+</nav>
+<a class="zl-btn-outline" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid #200093; color: #200093; font-size: 15px; font-weight: 600; padding: 14.5px 22.5px; border-radius: 12px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+Message Us on WhatsApp</a>
+</div>
+</header>
+
+<!-- 2. HERO -->
+<section id="top" style="background: var(--White, #ffffff)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px 40px 96px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: 64px; align-items: center">
+<div style="display: flex; flex-direction: column">
+<h1 class="zl-h1 " style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 52px; line-height: 1.2; font-weight: 800; letter-spacing: -0.025em; color: var(--Dark-Purple, #0a003d); text-wrap: balance">A Professional Website That Helps You Get <span style="color: var(--Violet, #7132ff)">New Clients</span></h1>
+<p style="font-size: 19px; line-height: 1.55; color: #4a4565; margin-top: 24px; max-width: 520px; text-wrap: pretty">Clients check you online before they make contact. We build a website that shows your work and makes them trust you.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin-top: 36px">
+<a class="zl-btn" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; background: var(--Violet, #7132ff); color: #ffffff; font-size: 16px; font-weight: 600; padding: 16px 28px; border-radius: 12px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+Message Us on WhatsApp</a>
+<a class="zl-link" href="#packages" style="display: inline-flex; align-items: center; gap: 8px; color: #200093; font-size: 16px; font-weight: 600">See Packages and Prices
+<svg class="zl-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg>
+</a>
+</div>
+</div>
+
+<!-- hero visual -->
+<div style="container-type: inline-size; width: 100%">
+<div style="position: relative; width: 100%; aspect-ratio: 1088 / 714">
+
+<div style="position: absolute; left: 0; top: 4.3cqw; width: 89.7cqw; height: 56.7cqw; background: #f3f3f6; border-radius: 4.6cqw"></div>
+<div style="position: absolute; left: 52.9cqw; top: 1.3cqw; width: 45.8cqw; height: 59.7cqw; background: #f3f3f6; border-radius: 4.6cqw"></div>
+
+<div style="position: absolute; left: 4.96cqw; top: 0; width: 70.77cqw; height: 49.36cqw; box-sizing: border-box; background: #faf7f2; border: 1px solid #e6e1d4; border-radius: 3.1cqw; box-shadow: 0 1.5cqw 4cqw rgba(20,20,40,.10); overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 4.96cqw; flex: none; display: flex; align-items: center; padding: 0 2.1cqw 0 2cqw; border-bottom: 1px solid #ece6d8; background: #ffffff">
+<span style="width: 1.29cqw; height: 1.29cqw; border-radius: 50%; background: #ff5f57"></span>
+<span style="width: 1.29cqw; height: 1.29cqw; border-radius: 50%; background: #febc2e; margin-left: 1cqw"></span>
+<span style="width: 1.29cqw; height: 1.29cqw; border-radius: 50%; background: #28c840; margin-left: 1cqw"></span>
+<span style="flex: 1; height: 2.57cqw; border-radius: 1.3cqw; background: #f1ede3; margin-left: 2.66cqw"></span>
+</div>
+<div style="height: 6.43cqw; flex: none; display: flex; align-items: center; padding: 0 5.2cqw 0 2.6cqw">
+<svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.6cqw; height: 2.6cqw; flex: none"><rect x="5" y="3" width="14" height="18" rx="2"></rect><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"></path></svg>
+<span style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: max(11px, 2cqw); font-weight: 800; color: #2a2e3b; margin-left: 0.9cqw; white-space: nowrap">Agrani Accounts</span>
+<div style="margin-left: auto; display: flex; align-items: center; gap: 2.4cqw">
+<span style="font-size: max(9.5px, 1.38cqw); font-weight: 500; color: #23252e; white-space: nowrap">Home</span>
+<span style="font-size: max(9.5px, 1.38cqw); font-weight: 500; color: #23252e; white-space: nowrap">Services</span>
+<span style="font-size: max(9.5px, 1.38cqw); font-weight: 500; color: #23252e; white-space: nowrap">About</span>
+<span style="font-size: max(9px, 1.3cqw); font-weight: 600; color: #2a2e3b; border: 1.5px solid #2a2e3b; border-radius: 0.8cqw; padding: 0.6cqw 1.5cqw; white-space: nowrap">Contact</span>
+</div>
+</div>
+<div style="margin: 0.6cqw 5.2cqw 0 2.6cqw; border-radius: 2cqw; background: #2a2e3b; padding: 2.4cqw 2.8cqw; display: flex; align-items: center; gap: 2cqw; height: 23cqw; box-sizing: border-box">
+<div style="flex: 1.25; min-width: 0; display: flex; flex-direction: column">
+<span style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: max(13px, 3.1cqw); font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; color: #ffffff">Tax and accounts, made simple</span>
+<span style="font-size: max(9px, 1.45cqw); line-height: 1.5; color: #c9ccd6; margin-top: 1cqw">Clear books and on-time returns for your business.</span>
+<span style="align-self: flex-start; margin-top: 1.7cqw; height: 4cqw; padding: 0 2.2cqw; border-radius: 0.95cqw; background: #e6d5b0; color: #23252e; font-size: max(9.5px, 1.6cqw); font-weight: 700; display: flex; align-items: center; white-space: nowrap">Get a free quote</span>
+</div>
+<div style="flex: 1; height: 100%; min-width: 0"><svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="width:100%;height:100%;display:block"><rect x="14" y="92" width="26" height="46" rx="5" fill="#ffffff" fill-opacity="0.32"></rect><rect x="52" y="74" width="26" height="64" rx="5" fill="#ffffff" fill-opacity="0.5"></rect><rect x="90" y="56" width="26" height="82" rx="5" fill="#ffffff" fill-opacity="0.72"></rect><rect x="128" y="34" width="26" height="104" rx="5" fill="#ffffff"></rect><path d="M22 78L66 56L104 40L152 14" fill="none" stroke="#e6d5b0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M136 12h19v19" fill="none" stroke="#e6d5b0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="176" cy="116" r="14" fill="#e6d5b0"></circle><circle cx="176" cy="116" r="8" fill="none" stroke="#2a2e3b" stroke-width="2.500"></circle></svg></div>
+</div>
+<div style="padding: 2cqw 5.2cqw 0 2.6cqw; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4cqw">
+<div style="display: flex; align-items: center; gap: 1.2cqw; background: #ffffff; border: 1px solid #e6e0d3; border-radius: 1.4cqw; padding: 1.5cqw 1.4cqw"><span style="width: 4.2cqw; height: 4.2cqw; border-radius: 1.1cqw; background: #efeae0; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.5cqw; height: 2.5cqw; flex: none"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9 13h6M9 17h6"></path></svg></span><span style="font-size: max(9px, 1.5cqw); font-weight: 600; color: #23252e; white-space: nowrap">Tax Returns</span></div><div style="display: flex; align-items: center; gap: 1.2cqw; background: #ffffff; border: 1px solid #e6e0d3; border-radius: 1.4cqw; padding: 1.5cqw 1.4cqw"><span style="width: 4.2cqw; height: 4.2cqw; border-radius: 1.1cqw; background: #efeae0; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.5cqw; height: 2.5cqw; flex: none"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 21V5M9 8h6"></path></svg></span><span style="font-size: max(9px, 1.5cqw); font-weight: 600; color: #23252e; white-space: nowrap">Bookkeeping</span></div><div style="display: flex; align-items: center; gap: 1.2cqw; background: #ffffff; border: 1px solid #e6e0d3; border-radius: 1.4cqw; padding: 1.5cqw 1.4cqw"><span style="width: 4.2cqw; height: 4.2cqw; border-radius: 1.1cqw; background: #efeae0; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.5cqw; height: 2.5cqw; flex: none"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></svg></span><span style="font-size: max(9px, 1.5cqw); font-weight: 600; color: #23252e; white-space: nowrap">Audit</span></div>
+</div>
+</div>
+
+<div style="position: absolute; left: 13.4cqw; top: 52.1cqw; width: 46.7cqw; height: 5.42cqw; box-sizing: border-box; background: #ffffff; border: 1px solid #ececef; border-radius: 1.4cqw; box-shadow: 0 0.8cqw 2.4cqw rgba(20,20,40,.08); padding: 0 2.5cqw 0 1.5cqw; display: flex; align-items: center; gap: 1.7cqw"><span style="width: 3.5cqw; height: 3.5cqw; border-radius: 50%; background: #1a7f52; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 1.9cqw; height: 1.9cqw"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span style="flex: 1; font-size: max(10.5px, 1.84cqw); font-weight: 600; color: #1f1f29; white-space: nowrap">New inquiry</span><span style="font-size: max(10px, 1.65cqw); color: #5b5b66; white-space: nowrap">Just now</span></div>
+<div style="position: absolute; left: 13.4cqw; top: 59.1cqw; width: 46.7cqw; height: 5.42cqw; box-sizing: border-box; background: #ffffff; border: 1px solid #ececef; border-radius: 1.4cqw; box-shadow: 0 0.8cqw 2.4cqw rgba(20,20,40,.08); padding: 0 2.5cqw 0 1.5cqw; display: flex; align-items: center; gap: 1.7cqw"><span style="width: 3.5cqw; height: 3.5cqw; border-radius: 50%; background: #1a7f52; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 1.9cqw; height: 1.9cqw"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span style="flex: 1; font-size: max(10.5px, 1.84cqw); font-weight: 600; color: #1f1f29; white-space: nowrap">Call booked</span><span style="font-size: max(10px, 1.65cqw); color: #5b5b66; white-space: nowrap">2 min ago</span></div>
+
+<div style="position: absolute; left: 73.4cqw; top: 14.5cqw; width: 26.6cqw; height: 51.1cqw; box-sizing: border-box; background: #faf7f2; border: max(3px, 0.55cqw) solid #1d1d27; border-radius: 3.7cqw; box-shadow: 0 1.5cqw 4cqw rgba(20,20,40,.16); padding: 1.1cqw 1.65cqw 1.65cqw; display: flex; flex-direction: column; overflow: hidden">
+<div style="height: 2.4cqw; flex: none; display: flex; align-items: center; justify-content: space-between; padding: 0 0.6cqw">
+<span style="font-size: max(8.5px, 1.1cqw); font-weight: 600; color: #1f1f29">9:41</span>
+<span style="display: flex; align-items: center; gap: 0.5cqw">
+<svg viewBox="0 0 18 12" aria-hidden="true" style="width: 1.7cqw; height: 1.1cqw"><rect x="0" y="8" width="3" height="4" rx="0.8" fill="#1f1f29"></rect><rect x="5" y="5" width="3" height="7" rx="0.8" fill="#1f1f29"></rect><rect x="10" y="2.5" width="3" height="9.5" rx="0.8" fill="#1f1f29"></rect><rect x="15" y="0" width="3" height="12" rx="0.8" fill="#1f1f29"></rect></svg>
+<svg viewBox="0 0 24 24" fill="none" stroke="#1f1f29" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="width: 1.5cqw; height: 1.5cqw"><path d="M2 9a14 14 0 0 1 20 0M6 13a8 8 0 0 1 12 0"></path><circle cx="12" cy="18" r="1.4" fill="#1f1f29"></circle></svg>
+<span style="width: 2cqw; height: 1cqw; border-radius: 0.3cqw; background: #1f1f29"></span>
+</span>
+</div>
+<div style="height: 3.7cqw; flex: none; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ece6d8; padding: 0 0.3cqw">
+<span style="display: flex; align-items: center; gap: 0.6cqw">
+<svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.2cqw; height: 2.2cqw; flex: none"><rect x="5" y="3" width="14" height="18" rx="2"></rect><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"></path></svg>
+<span style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: max(9px, 1.3cqw); font-weight: 800; color: #2a2e3b; white-space: nowrap">Agrani Accounts</span>
+</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="#23252e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2cqw; height: 2cqw; flex: none"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</div>
+<div style="margin-top: 1.3cqw; border-radius: 1.6cqw; background: #2a2e3b; padding: 1.8cqw 1.7cqw; display: flex; flex-direction: column; flex: none">
+<span style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: max(11px, 2.1cqw); font-weight: 800; line-height: 1.2; color: #ffffff">Tax and accounts, made simple</span>
+<span style="margin-top: 1.2cqw; height: 3.4cqw; border-radius: 0.9cqw; background: #e6d5b0; color: #23252e; font-size: max(9px, 1.4cqw); font-weight: 700; display: flex; align-items: center; justify-content: center; white-space: nowrap">Get a free quote</span>
+</div>
+<span style="font-size: max(9px, 1.5cqw); font-weight: 800; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #23252e; margin-top: 1.3cqw">Our services</span>
+<div style="display: flex; align-items: center; gap: 1.2cqw; background: #ffffff; border: 1px solid #e6e0d3; border-radius: 1.2cqw; padding: 0.9cqw 1.2cqw; margin-top: 0.9cqw"><span style="width: 3.6cqw; height: 3.6cqw; border-radius: 1cqw; background: #efeae0; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.2cqw; height: 2.2cqw; flex: none"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9 13h6M9 17h6"></path></svg></span><span style="flex: 1; font-size: max(8.5px, 1.3cqw); font-weight: 600; color: #23252e; white-space: nowrap">Tax Returns</span><svg viewBox="0 0 24 24" fill="none" stroke="#9a9684" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 1.6cqw; height: 1.6cqw; flex: none"><path d="M9 6l6 6-6 6"></path></svg></div><div style="display: flex; align-items: center; gap: 1.2cqw; background: #ffffff; border: 1px solid #e6e0d3; border-radius: 1.2cqw; padding: 0.9cqw 1.2cqw; margin-top: 0.9cqw"><span style="width: 3.6cqw; height: 3.6cqw; border-radius: 1cqw; background: #efeae0; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.2cqw; height: 2.2cqw; flex: none"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 21V5M9 8h6"></path></svg></span><span style="flex: 1; font-size: max(8.5px, 1.3cqw); font-weight: 600; color: #23252e; white-space: nowrap">Bookkeeping</span><svg viewBox="0 0 24 24" fill="none" stroke="#9a9684" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 1.6cqw; height: 1.6cqw; flex: none"><path d="M9 6l6 6-6 6"></path></svg></div><div style="display: flex; align-items: center; gap: 1.2cqw; background: #ffffff; border: 1px solid #e6e0d3; border-radius: 1.2cqw; padding: 0.9cqw 1.2cqw; margin-top: 0.9cqw"><span style="width: 3.6cqw; height: 3.6cqw; border-radius: 1cqw; background: #efeae0; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2e3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.2cqw; height: 2.2cqw; flex: none"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></svg></span><span style="flex: 1; font-size: max(8.5px, 1.3cqw); font-weight: 600; color: #23252e; white-space: nowrap">Audit</span><svg viewBox="0 0 24 24" fill="none" stroke="#9a9684" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 1.6cqw; height: 1.6cqw; flex: none"><path d="M9 6l6 6-6 6"></path></svg></div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- 3. WHAT A GOOD WEBSITE DOES -->
+<section style="background: #faf8ff; padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="text-align: center; max-width: 780px; margin: 0 auto">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; color: var(--Dark-Purple, #0a003d); text-wrap: balance">What a Good Website Does for Your Business</h2>
+<p style="font-size: 18px; line-height: 1.55; margin-top: 16px; text-wrap: pretty">Your website is often the first thing a new client sees.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px">
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><rect x="14" y="33" width="14" height="12" rx="4" fill="#e9e6f4"></rect><rect x="34" y="34" width="40" height="4" rx="2" fill="#d9d4ec"></rect><rect x="34" y="41" width="26" height="3.500" rx="1.800" fill="#c4bce3"></rect><rect x="14" y="50" width="14" height="12" rx="4" fill="#e9e6f4"></rect><rect x="34" y="51" width="34" height="4" rx="2" fill="#d9d4ec"></rect><rect x="34" y="58" width="30" height="3.500" rx="1.800" fill="#c4bce3"></rect><rect x="14" y="67" width="14" height="12" rx="4" fill="#e9e6f4"></rect><rect x="34" y="68" width="44" height="4" rx="2" fill="#d9d4ec"></rect><rect x="34" y="75" width="20" height="3.500" rx="1.800" fill="#c4bce3"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.500 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance">Clients Understand You Quickly</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">Your website is like a digital catalog. Clients see who you are and what you offer in one place.</p>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><rect x="14" y="32" width="40" height="13" rx="6.500" fill="#e9e6f4"></rect><rect x="21" y="37" width="20" height="3.500" rx="1.800" fill="#c4bce3"></rect><rect x="36" y="50" width="60" height="18" rx="8" fill="#d9d4ec"></rect><rect x="42" y="55" width="40" height="8" rx="4" fill="#ffffff"></rect><path d="M46 59h9" stroke="#a599d3" stroke-width="2" stroke-linecap="round"></path><rect x="14" y="73" width="30" height="5" rx="2.500" fill="#e9e6f4"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance">Save Your Time</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">Clients can learn about you on their own. When someone asks about your business, you can just share your website.</p>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><rect x="14" y="31" width="82" height="12" rx="6" fill="#f3f1fa" stroke="#d9d4ec" stroke-width="1.500"></rect><circle cx="23" cy="37" r="3" fill="none" stroke="#a599d3" stroke-width="1.500"></circle><rect x="30" y="35" width="26" height="4" rx="2" fill="#c4bce3"></rect><rect x="14" y="48" width="82" height="19" rx="6" fill="#e9e6f4" stroke="#a599d3" stroke-width="1.500"></rect><rect x="21" y="53" width="38" height="4.500" rx="2.200" fill="#a599d3"></rect><rect x="21" y="60" width="52" height="3.500" rx="1.800" fill="#c4bce3"></rect><rect x="14" y="72" width="60" height="4" rx="2" fill="#d9d4ec"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M2.5 12h19"></path><path d="M12 2.500a14.500 14.500 0 0 1 4 9.500 14.500 14.500 0 0 1-4 9.500 14.500 14.500 0 0 1-4-9.500A14.500 14.500 0 0 1 12 2.500z"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance">Be Found Online</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">When someone looks you up online, they can find you. Being easy to find makes you look more credible.</p>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="29" cy="49" r="10" fill="#e9e6f4"></circle><circle cx="29" cy="46" r="3.500" fill="#c4bce3"></circle><path d="M22 56a7 5 0 0 1 14 0" fill="#c4bce3"></path><rect x="46" y="40" width="46" height="6" rx="3" fill="#d9d4ec"></rect><rect x="46" y="51" width="32" height="5" rx="2.500" fill="#c4bce3"></rect><rect x="14" y="68" width="82" height="11" rx="5.500" fill="#e9e6f4"></rect><circle cx="22" cy="73.500" r="2.500" fill="#a599d3"></circle><rect x="29" y="72" width="34" height="3.500" rx="1.800" fill="#c4bce3"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance">Build Trust Before the First Contact</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">A professional website shows you are serious, before you say a word.</p>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><rect x="14" y="32" width="38" height="30" rx="6" fill="#e9e6f4"></rect><rect x="60" y="34" width="34" height="6" rx="3" fill="#d9d4ec"></rect><rect x="60" y="45" width="24" height="5" rx="2.500" fill="#d9d4ec"></rect><rect x="60" y="55" width="30" height="5" rx="2.500" fill="#c4bce3"></rect><rect x="14" y="70" width="82" height="6" rx="3" fill="#e9e6f4"></rect><rect x="14" y="70" width="82" height="6" rx="3" fill="#c4bce3"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance">Keep Your Clients' Trust</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">A website that is slow, broken, hard to understand or badly designed makes clients lose trust. A good website keeps it.</p>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><rect x="14" y="32" width="46" height="26" rx="6" fill="#e9e6f4"></rect><rect x="67" y="34" width="29" height="6" rx="3" fill="#d9d4ec"></rect><rect x="67" y="45" width="20" height="5" rx="2.500" fill="#d9d4ec"></rect><rect x="14" y="65" width="36" height="12" rx="6" fill="#a599d3"></rect><rect x="21" y="69.500" width="22" height="3.500" rx="1.800" fill="#ffffff"></rect><path d="M58 70l7 3-3 1 2 4-2 1-2-4-2 2z" fill="#c4bce3" stroke="#a599d3" stroke-width="1" stroke-linejoin="round"></path><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"></circle><path d="M2 21a7 7 0 0 1 14 0"></path><path d="M19 8v6M16 11h6"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance">Turn Visitors into Clients</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">A clear, well-planned website shows what you offer and guides visitors to contact you.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 4. PACKAGES -->
+<section id="packages" style="background: var(--White, #ffffff); padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="text-align: center; max-width: 780px; margin: 0 auto">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; color: var(--Dark-Purple, #0a003d)">Our Business Packages</h2>
+<p style="font-size: 18px; line-height: 1.55; margin-top: 16px; text-wrap: pretty">Each package is made with the same care. Bigger packages add more pages and more features.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 56px; align-items: stretch">
+<div style="position: relative; background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column">
+
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 30px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em; color: var(--Dark-Purple, #0a003d)">Starter</h3>
+<p style="font-size: 15px; line-height: 1.5; font-style: italic; color: #4a4565; margin-top: 8px; min-height: 46px">For small or new businesses that are just getting started online</p>
+<div style="height: 1px; background: #ece5ff; margin: 18px 0 20px"></div>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093">Included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Up to 5 pages</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Logo &amp; Brand Guideline</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Custom design and content writing</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Phone and email contact</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Basic SEO</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Basic animations</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Website in either English or Bangla language</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Fast, secure and mobile friendly</li>
+</ul>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093; margin-top: 28px">Not included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #efeff3; display: flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5b5b66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>Domain &amp; Hosting</li>
+</ul>
+<div style="margin-top: auto; padding-top: 32px">
+<div style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #4a4565"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Delivery: 10 to 15 days</div>
+<p style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 44px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: #200093; margin-top: 14px">20,000 <span style="font-size: 20px; font-weight: 700; letter-spacing: 0">BDT</span></p>
+<a class="zl-btn-outline" href="https://wa.me/8801814090134" style="display: flex; align-items: center; justify-content: center; margin-top: 24px; border: 1.5px solid #200093; color: #200093; background: #ffffff; font-size: 16px; font-weight: 600; padding: 15px 24px; border-radius: 12px">Get Started</a>
+</div>
+</div>
+<div style="position: relative; background: #ffffff; border: 2px solid #7132ff; border-radius: 24px; padding: 35.5px 23.5px; display: flex; flex-direction: column">
+<span style="position: absolute; top: -15px; left: 34px; font-size: 13px; font-weight: 700; color: #ffffff; background: #7132ff; border-radius: 999px; padding: 6px 16px; line-height: 1.3">Recommended</span>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 30px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em; color: var(--Dark-Purple, #0a003d)">Standard</h3>
+<p style="font-size: 15px; line-height: 1.5; font-style: italic; color: #4a4565; margin-top: 8px; min-height: 46px">For growing businesses that need a stronger online presence</p>
+<div style="height: 1px; background: #ece5ff; margin: 18px 0 20px"></div>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093">Included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Up to 8 pages</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Logo &amp; Brand Guideline</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Custom design and content writing</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Phone, email and contact form</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Google Analytics and better SEO</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Standard animations</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Website in either English or Bangla language</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Fast, secure and mobile friendly</li>
+</ul>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093; margin-top: 28px">Not included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #efeff3; display: flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5b5b66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>Domain &amp; Hosting</li>
+</ul>
+<div style="margin-top: auto; padding-top: 32px">
+<div style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #4a4565"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Delivery: 20 to 25 days</div>
+<p style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 44px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: #200093; margin-top: 14px">30,000 <span style="font-size: 20px; font-weight: 700; letter-spacing: 0">BDT</span></p>
+<a class="zl-btn" href="https://wa.me/8801814090134" style="display: flex; align-items: center; justify-content: center; margin-top: 24px; background: var(--Violet, #7132ff); color: #ffffff; font-size: 16px; font-weight: 600; padding: 16px 24px; border-radius: 12px">Get Started</a>
+</div>
+</div>
+<div style="position: relative; background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column">
+
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 30px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em; color: var(--Dark-Purple, #0a003d)">Advance</h3>
+<p style="font-size: 15px; line-height: 1.5; font-style: italic; color: #4a4565; margin-top: 8px; min-height: 46px">For established businesses that need a bigger, complete website</p>
+<div style="height: 1px; background: #ece5ff; margin: 18px 0 20px"></div>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093">Included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Up to 12 pages</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Logo &amp; Brand Guideline</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Custom design and content writing</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Phone, email, contact form and book‑a‑call</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Google Analytics and advanced SEO</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Advance animations</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Website in English and Bangla language</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Fast, secure and mobile friendly</li>
+</ul>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093; margin-top: 28px">Not included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #efeff3; display: flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5b5b66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>Domain &amp; Hosting</li>
+</ul>
+<div style="margin-top: auto; padding-top: 32px">
+<div style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #4a4565"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Delivery: 30 to 45 days</div>
+<p style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 44px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: #200093; margin-top: 14px">50,000 <span style="font-size: 20px; font-weight: 700; letter-spacing: 0">BDT</span></p>
+<a class="zl-btn-outline" href="https://wa.me/8801814090134" style="display: flex; align-items: center; justify-content: center; margin-top: 24px; border: 1.5px solid #200093; color: #200093; background: #ffffff; font-size: 16px; font-weight: 600; padding: 15px 24px; border-radius: 12px">Get Started</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 5. DON'T SEE A PACKAGE -->
+<section style="background: #faf8ff; padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; align-items: flex-start">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Don't See a Package That Fits Your Business?</h2>
+<p style="font-size: 18px; line-height: 1.6; margin-top: 16px; max-width: 520px; text-wrap: pretty">Tell us what you need. We have the experience to build it.</p>
+<div style="margin-top: 32px">
+<a class="zl-btn" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; background: var(--Violet, #7132ff); color: #ffffff; font-size: 16px; font-weight: 600; padding: 16px 28px; border-radius: 12px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+Message Us on WhatsApp</a>
+</div>
+</div>
+<div>
+<div style="container-type: inline-size; width: 100%">
+<div style="position: relative; width: 100%; aspect-ratio: 1088 / 714">
+<div style="position: absolute; left: 0; top: 4.3cqw; width: 89.7cqw; height: 56.7cqw; background: #e3eef6; border-radius: 4.6cqw"></div>
+<div style="position: absolute; left: 52.9cqw; top: 1.3cqw; width: 45.8cqw; height: 59.7cqw; background: #e3eef6; border-radius: 4.6cqw"></div>
+<div style="position: absolute; left: 3cqw; top: 0; width: 88cqw; height: 54cqw; box-sizing: border-box; background: #ffffff; border: 1px solid #d6e3ec; border-radius: 3.1cqw; box-shadow: 0 1.5cqw 4cqw rgba(15,50,80,.12); overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 5cqw; flex: none; display: flex; align-items: center; padding: 0 2.1cqw 0 2cqw; border-bottom: 1px solid #e3ecf2; background: #fafcfd">
+<span style="width: 1.29cqw; height: 1.29cqw; border-radius: 50%; background: #ff5f57"></span><span style="width: 1.29cqw; height: 1.29cqw; border-radius: 50%; background: #febc2e; margin-left: 1cqw"></span><span style="width: 1.29cqw; height: 1.29cqw; border-radius: 50%; background: #28c840; margin-left: 1cqw"></span>
+<span style="flex: 1; height: 2.57cqw; border-radius: 1.3cqw; background: #eef3f7; margin-left: 2.66cqw; display: flex; align-items: center; padding-left: 1.4cqw; font-size: max(8px, 1.2cqw); color: #5f7688; white-space: nowrap">safartours.com/tours</span>
+</div>
+<div style="height: 6.4cqw; flex: none; display: flex; align-items: flex-end; gap: 3cqw; padding: 0 2.6cqw; background: #ffffff; border-bottom: 1px solid #e3ecf2">
+<span style="display:flex;align-items:center;gap:1cqw;align-self:center;margin-right:2cqw"><span style="width:3cqw;height:3cqw;border-radius:1cqw;background:#0e6ba8;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1.9cqw;height:1.9cqw;flex:none"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.300.3l.5-.2c.4-.3.6-.7.5-1.200z"></path></svg></span><span style="font-size:max(8px,1.5cqw);font-weight:700;color:#17324a;white-space:nowrap">Safar Tours</span></span>
+<span style="font-size:max(7px,1.25cqw);font-weight:600;color:#0e6ba8;padding:1.2cqw 0;border-bottom:0.35cqw solid #0e6ba8;white-space:nowrap">Tours</span><span style="font-size:max(7px,1.25cqw);font-weight:600;color:#6b8296;padding:1.2cqw 0;border-bottom:0.35cqw solid transparent;white-space:nowrap">Bookings</span><span style="font-size:max(7px,1.25cqw);font-weight:600;color:#6b8296;padding:1.2cqw 0;border-bottom:0.35cqw solid transparent;white-space:nowrap">Guests</span><span style="font-size:max(7px,1.25cqw);font-weight:600;color:#6b8296;padding:1.2cqw 0;border-bottom:0.35cqw solid transparent;white-space:nowrap">Reports</span>
+</div>
+<div style="flex: 1; display: flex; gap: 2.6cqw; padding: 2cqw 2.6cqw 6.5cqw; min-height: 0">
+<div style="flex: 1.45; display: flex; flex-direction: column; min-width: 0">
+<div style="position: relative; height: 21cqw; border-radius: 1.8cqw; overflow: hidden"><svg viewBox="0 0 200 84" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%"><rect width="200" height="84" fill="#dff0fb"></rect><circle cx="150" cy="26" r="13" fill="#f5b94a"></circle><path d="M0 52l30-22 26 18 24-14 30 20v30H0z" fill="#a9d1b8"></path><path d="M70 58l34-26 40 30v22H70z" fill="#7fb99a"></path><rect y="56" width="200" height="28" fill="#0e6ba8"></rect><path d="M0 64c14-5 26-5 40 0s26 5 40 0 26-5 40 0 26 5 40 0 26-5 40 0v6c-14-5-26-5-40 0s-26 5-40 0-26-5-40 0-26 5-40 0-26-5-40 0z" fill="#5aa6d6"></path><path d="M0 76c14-5 26-5 40 0s26 5 40 0 26-5 40 0 26 5 40 0 26-5 40 0v8H0z" fill="#e9d6a8"></path><path d="M96 56V34l16 20z" fill="#ffffff"></path><path d="M92 56h26l-4 6H96z" fill="#f08a4b"></path></svg></div>
+<div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.4cqw"><span style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:max(9px,1.8cqw);font-weight:800;color:#17324a;white-space:nowrap">Sea Beach Escape</span><span style="font-size:max(7px,1.15cqw);color:#6b8296;white-space:nowrap">3 days, 2 nights</span></div>
+<div style="display:flex;gap:1cqw;margin-top:1.2cqw"><span style="display:flex;align-items:center;gap:0.8cqw;font-size:max(7px,1.15cqw);font-weight:600;color:#33566f;background:#e3f0f8;border-radius:1cqw;padding:0.7cqw 1.2cqw;white-space:nowrap"><svg viewBox="0 0 24 24" fill="none" stroke="#0e6ba8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1.6cqw;height:1.6cqw;flex:none"><path d="M3 20V8l9-5 9 5v12"></path><path d="M9 20v-6h6v6"></path></svg>Hotel</span><span style="display:flex;align-items:center;gap:0.8cqw;font-size:max(7px,1.15cqw);font-weight:600;color:#33566f;background:#e3f0f8;border-radius:1cqw;padding:0.7cqw 1.2cqw;white-space:nowrap"><svg viewBox="0 0 24 24" fill="none" stroke="#0e6ba8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1.6cqw;height:1.6cqw;flex:none"><path d="M4 3v7a3 3 0 0 0 3 3v8M10 3v18M18 3c-2 2-3 5-3 8h3v10"></path></svg>Meals</span><span style="display:flex;align-items:center;gap:0.8cqw;font-size:max(7px,1.15cqw);font-weight:600;color:#33566f;background:#e3f0f8;border-radius:1cqw;padding:0.7cqw 1.2cqw;white-space:nowrap"><svg viewBox="0 0 24 24" fill="none" stroke="#0e6ba8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1.6cqw;height:1.6cqw;flex:none"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M3 11h18M7 20v-4M17 20v-4"></path></svg>Bus</span></div>
+</div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 1.8cqw; min-width: 0">
+<div style="display:flex;flex-direction:column;gap:0.5cqw"><span style="font-size:max(6.5px,1cqw);font-weight:600;color:#6b8296">Travelers</span><span style="height:4.8cqw;box-sizing:border-box;border:1px solid #d3e2ec;border-radius:1cqw;padding:0 1.4cqw;display:flex;align-items:center;justify-content:space-between;font-size:max(8px,1.3cqw);font-weight:600;color:#17324a;white-space:nowrap">4 people<svg viewBox="0 0 24 24" fill="none" stroke="#6b8296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1.6cqw;height:1.6cqw;flex:none"><path d="M5 12h14M12 5v14"></path></svg></span></div>
+<div style="display:flex;flex-direction:column;gap:0.5cqw"><span style="font-size:max(6.5px,1cqw);font-weight:600;color:#6b8296">Date</span><span style="height:4.8cqw;box-sizing:border-box;border:1px solid #d3e2ec;border-radius:1cqw;padding:0 1.4cqw;display:flex;align-items:center;justify-content:space-between;font-size:max(8px,1.3cqw);font-weight:600;color:#17324a;white-space:nowrap">Fri, 20 Nov<svg viewBox="0 0 24 24" fill="none" stroke="#6b8296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1.8cqw;height:1.8cqw;flex:none"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></span></div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:0.6cqw"><span style="font-size:max(7px,1.15cqw);color:#6b8296">Total</span><span style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:max(10px,2.2cqw);font-weight:800;color:#17324a;white-space:nowrap">Tk 34,000</span></div>
+<span style="height:5cqw;border-radius:1.1cqw;background:#0e6ba8;color:#ffffff;font-size:max(8px,1.4cqw);font-weight:700;display:flex;align-items:center;justify-content:center;white-space:nowrap">Book this tour</span>
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 49cqw; width: 40cqw; box-sizing: border-box; background: #ffffff; border: 1px solid #d6e3ec; border-radius: 2.4cqw; box-shadow: 0 1.2cqw 3.2cqw rgba(15,50,80,.14); padding: 1.6cqw 2cqw; display: flex; align-items: center; gap: 1.6cqw">
+<span style="width: 5cqw; height: 5cqw; border-radius: 50%; background: #0e6ba8; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 2.8cqw; height: 2.8cqw"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<div style="display: flex; flex-direction: column"><span style="font-size: max(9px, 1.5cqw); font-weight: 700; color: #17324a; white-space: nowrap">Booking confirmed</span><span style="font-size: max(8px, 1.2cqw); color: #5f7688; white-space: nowrap">4 travelers · Fri, 20 Nov</span></div>
+</div>
+<div style="position: absolute; left: 58cqw; top: 52cqw; width: 38cqw; height: 8.4cqw; box-sizing: border-box; background: #ffffff; border: 1px solid #d6e3ec; border-radius: 1.8cqw; box-shadow: 0 1cqw 2.6cqw rgba(15,50,80,.12); display: flex; align-items: center; gap: 1.6cqw; padding: 0 2cqw">
+<span style="width: 4.2cqw; height: 4.2cqw; border-radius: 50%; background: #e3f0f8; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#0e6ba8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:2.4cqw;height:2.4cqw;flex:none"><rect x="3" y="6" width="18" height="12" rx="2"></rect><circle cx="12" cy="12" r="2.500"></circle></svg></span>
+<div style="display: flex; flex-direction: column"><span style="font-size: max(9px, 1.5cqw); font-weight: 700; color: #17324a; white-space: nowrap">Advance received</span><span style="font-size: max(8px, 1.2cqw); color: #5f7688; white-space: nowrap">Tk 17,000 · bKash</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 6. COMMON QUESTIONS -->
+<section style="background: var(--White, #ffffff); padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="text-align: center; max-width: 780px; margin: 0 auto">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; color: var(--Dark-Purple, #0a003d)">Common Questions</h2>
+<p style="font-size: 18px; line-height: 1.55; margin-top: 16px">Everything you may want to know before you start.</p>
+</div>
+<div style="max-width: 900px; margin: 56px auto 0; display: flex; flex-direction: column; gap: 16px">
+<div class="zl-fq"><input type="checkbox" id="fq1" class="zl-fq-t" aria-label="Show answer" checked="">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Why is your price higher than some other agencies?</h3>
+<label for="fq1" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Agencies with very low prices often use copy-paste templates. Those websites are not made for your business, and they can be slow and easy to hack. We take the time to give quality in every part, from design to build, made fully for what your business needs. You pay for quality that lasts.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq2" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Are domain and hosting included?</h3>
+<label for="fq2" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">No. Domain and hosting are not in the package price. You can buy them yourself and share the access with us, or you can choose our Domain &amp; Hosting Plans.</p>
+<a class="zl-qa-link" href="domain-hosting-plans.html" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; color: #0a003d; font-size: 15px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px">See Domain &amp; Hosting Plans
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg>
+</a></div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq3" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">How does payment work?</h3>
+<label for="fq3" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">You pay 50% to start the project and 50% before we hand over your website. You can pay by bKash, Nagad or bank, whichever you prefer.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq4" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">How long does it take to make the website?</h3>
+<label for="fq4" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Each package has its own delivery time. You can see it in the package cards above. We do not rush the work. We always want to deliver quality work, and that takes time. You will get the exact timeline in your plan before we start the project.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq5" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Can I update my website myself?</h3>
+<label for="fq5" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">You can update the content of your website, like text and images. For bigger changes, like the design or new pages, we do it for you at its own price. For regular help with content, you can choose our Website Care Plans. This keeps your website safe from breaking.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq6" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">What support do I get after launch?</h3>
+<label for="fq6" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">We give 7 days of free support after your website launch. If something breaks or does not work as it should, we fix it for free. New pages, new features and design changes are not part of free support and get their own price. For content changes and regular upkeep, you can choose our Content Update Plans or Security &amp; Maintenance Plans.</p>
+<a class="zl-qa-link" href="hosting-care.html" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; color: #0a003d; font-size: 15px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px">See Hosting &amp; Care Plans
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg>
+</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 7. FINAL CTA -->
+<section style="background: linear-gradient(to bottom, #ffffff 50%, #f3eeff 50%); padding: 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="position: relative; overflow: hidden; background: var(--Violet, #7132ff); border-radius: 32px; padding: 96px 72px">
+<!-- cta visual -->
+<div style="position: absolute; right: 48px; top: 50%; transform: translateY(-50%); width: 480px; height: 420px" aria-hidden="true">
+<svg width="480" height="420" viewBox="0 0 480 420" fill="none" style="position: absolute; inset: 0">
+<g stroke="#ffffff" fill="none">
+<circle cx="240" cy="210" r="110" stroke-opacity="0.16" stroke-width="1.5"></circle>
+<circle cx="240" cy="210" r="165" stroke-opacity="0.11" stroke-width="1.5"></circle>
+<circle cx="240" cy="210" r="220" stroke-opacity="0.07" stroke-width="1.5"></circle>
+</g>
+
+</svg>
+
+<div style="position: absolute; left: 60px; top: 96px; width: 360px; height: 214px; box-sizing: border-box; background: #ffffff; border-radius: 18px; box-shadow: 0 18px 44px rgba(10,0,61,.38); overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 30px; flex: none; display: flex; align-items: center; gap: 5px; padding: 0 13px; border-bottom: 1px solid #ececef; background: #fafafb">
+<span style="width: 7px; height: 7px; border-radius: 50%; background: #ff5f57"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #febc2e"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #28c840"></span>
+<span style="flex: 1; height: 18px; border-radius: 9px; background: #ececef; margin-left: 8px; display: flex; align-items: center; padding: 0 10px; font-size: 10.5px; font-weight: 500; color: #5b5b66; white-space: nowrap">yourbusiness.com</span>
+</div>
+<svg width="360" height="42" viewBox="0 0 360 42" style="display: block; flex: none" aria-hidden="true"><path d="M0 0h72v20a36 36 0 0 1-72 0z" fill="#2f5d50"></path><path d="M72 0h72v20a36 36 0 0 1-72 0z" fill="#f0e4cb"></path><path d="M144 0h72v20a36 36 0 0 1-72 0z" fill="#2f5d50"></path><path d="M216 0h72v20a36 36 0 0 1-72 0z" fill="#f0e4cb"></path><path d="M288 0h72v20a36 36 0 0 1-72 0z" fill="#2f5d50"></path></svg>
+<div style="display: flex; gap: 14px; padding: 12px 18px 0"><div style="flex: 1; display: flex; flex-direction: column; min-width: 0"><div style="height: 82px; border-radius: 12px; background: #f4ecdc; overflow: hidden"><svg viewBox="0 0 100 82" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display: block; width: 100%; height: 100%"><rect width="100" height="82" fill="#f4ecdc"></rect><rect y="60" width="100" height="22" fill="#e0cfae"></rect><rect x="8" y="9" width="30" height="30" rx="2" fill="#fffaf0"></rect><path d="M23 9v30M8 24h30" stroke="#d8c7a5" stroke-width="1.6"></path><path d="M5 7h8v36H5zM33 7h8v36h-8z" fill="#8fb3a2"></path><rect x="60" y="12" width="26" height="20" rx="2" fill="#fffaf0"></rect><rect x="63" y="15" width="20" height="14" rx="1.5" fill="#f2c46b"></rect><path d="M63 29l7-7 5 4 3-3 5 6z" fill="#c9794d"></path><ellipse cx="46" cy="70" rx="34" ry="6" fill="#c9794d" fill-opacity="0.35"></ellipse><rect x="14" y="36" width="60" height="22" rx="8" fill="#7a9e8e"></rect><rect x="9" y="46" width="70" height="16" rx="6" fill="#2f5d50"></rect><rect x="5" y="43" width="12" height="20" rx="6" fill="#2f5d50"></rect><rect x="71" y="43" width="12" height="20" rx="6" fill="#2f5d50"></rect><rect x="20" y="40" width="14" height="12" rx="4" fill="#c9794d"></rect><rect x="52" y="40" width="14" height="12" rx="4" fill="#f2c46b"></rect><path d="M92 62V40" stroke="#6b5a45" stroke-width="2" stroke-linecap="round"></path><path d="M86 40l2.500-11h7l2.500 11z" fill="#f2c46b"></path></svg></div><span style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 13px; font-weight: 800; color: #1f1f29; margin-top: 9px; line-height: 1.3; white-space: nowrap; text-align: center">Living Room</span></div><div style="flex: 1; display: flex; flex-direction: column; min-width: 0"><div style="height: 82px; border-radius: 12px; background: #f4ecdc; overflow: hidden"><svg viewBox="0 0 100 82" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display: block; width: 100%; height: 100%"><rect width="100" height="82" fill="#f4ecdc"></rect><rect y="60" width="100" height="22" fill="#e0cfae"></rect><rect x="6" y="6" width="88" height="3" rx="1.500" fill="#b98a5e"></rect><rect x="6" y="9" width="40" height="20" rx="2" fill="#8fb3a2"></rect><rect x="54" y="9" width="40" height="20" rx="2" fill="#8fb3a2"></rect><path d="M26 9v20M74 9v20" stroke="#f4ecdc" stroke-width="1.500"></path><path d="M22 20h1.500M28.500 20H30M70 20h1.500M76.500 20H78" stroke="#f4ecdc" stroke-width="2" stroke-linecap="round"></path><path d="M30 0v6M70 0v6" stroke="#6b5a45" stroke-width="1.200"></path><path d="M24 6h12l-2 7h-8zM64 6h12l-2 7h-8z" fill="#f2c46b"></path><rect x="6" y="46" width="88" height="6" rx="2" fill="#b98a5e"></rect><rect x="8" y="52" width="84" height="26" rx="2" fill="#2f5d50"></rect><path d="M36 52v26M64 52v26" stroke="#f4ecdc" stroke-opacity="0.5" stroke-width="1.200"></path><rect x="32" y="58" width="2.500" height="8" rx="1.200" fill="#f4ecdc"></rect><rect x="38" y="58" width="2.500" height="8" rx="1.200" fill="#f4ecdc"></rect><rect x="60" y="58" width="2.500" height="8" rx="1.200" fill="#f4ecdc"></rect><rect x="66" y="58" width="2.500" height="8" rx="1.200" fill="#f4ecdc"></rect><rect x="42" y="36" width="16" height="10" rx="1.500" fill="#fffaf0"></rect><circle cx="46" cy="41" r="2.500" fill="#c9794d"></circle><circle cx="54" cy="41" r="2.500" fill="#c9794d"></circle><rect x="12" y="35" width="14" height="11" rx="3" fill="#c9794d"></rect><path d="M12 38h14" stroke="#fffaf0" stroke-width="1.500"></path><path d="M78 46c-1-6 3-10 8-10s9 4 8 10z" fill="#7a9e8e"></path></svg></div><span style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 13px; font-weight: 800; color: #1f1f29; margin-top: 9px; line-height: 1.3; white-space: nowrap; text-align: center">Kitchen</span></div><div style="flex: 1; display: flex; flex-direction: column; min-width: 0"><div style="height: 82px; border-radius: 12px; background: #f4ecdc; overflow: hidden"><svg viewBox="0 0 100 82" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display: block; width: 100%; height: 100%"><rect width="100" height="82" fill="#f4ecdc"></rect><rect y="60" width="100" height="22" fill="#e0cfae"></rect><rect x="60" y="10" width="28" height="26" rx="2" fill="#fffaf0"></rect><path d="M74 10v26M60 23h28" stroke="#d8c7a5" stroke-width="1.500"></path><rect x="12" y="14" width="46" height="22" rx="3" fill="#fffaf0"></rect><path d="M17 31l8-8 6 5 5-4 8 7z" fill="#8fb3a2"></path><rect x="12" y="26" width="64" height="30" rx="6" fill="#2f5d50"></rect><rect x="8" y="44" width="72" height="18" rx="5" fill="#fffaf0"></rect><rect x="15" y="37" width="26" height="12" rx="5" fill="#f2c46b"></rect><rect x="46" y="37" width="26" height="12" rx="5" fill="#f4ecdc" stroke="#d8c7a5" stroke-width="1"></rect><rect x="8" y="52" width="72" height="13" rx="4" fill="#c9794d"></rect><path d="M8 57h72" stroke="#fffaf0" stroke-opacity="0.45" stroke-width="1.500"></path><rect x="84" y="50" width="12" height="16" rx="2" fill="#b98a5e"></rect><path d="M86 50l2-9h4l2 9z" fill="#f2c46b"></path><rect x="8" y="64" width="4" height="4" fill="#6b5a45"></rect><rect x="76" y="64" width="4" height="4" fill="#6b5a45"></rect></svg></div><span style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 13px; font-weight: 800; color: #1f1f29; margin-top: 9px; line-height: 1.3; white-space: nowrap; text-align: center">Bedroom</span></div></div>
+</div>
+<svg width="480" height="130" viewBox="0 0 480 130" fill="none" style="position: absolute; left: 0; top: 0" aria-hidden="true"><path d="M34 97Q63.0 98.8 80 100" stroke="#ffffff" stroke-opacity="0.85" stroke-width="1.4" fill="none"></path><path d="M34 92C4 74 9 40 34 40C59 40 64 74 34 92z" fill="#ffc933"></path><path d="M29 98L34 91L39 98z" fill="#ffc933"></path><path d="M24 56Q20 65 23 72" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none"></path><path d="M116 93Q92.0 97.2 80 100" stroke="#ffffff" stroke-opacity="0.85" stroke-width="1.4" fill="none"></path><path d="M116 88C86 70 91 36 116 36C141 36 146 70 116 88z" fill="#ef4444"></path><path d="M111 94L116 87L121 94z" fill="#ef4444"></path><path d="M106 52Q102 61 105 68" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none"></path><path d="M74 65Q83.0 86.0 80 100" stroke="#ffffff" stroke-opacity="0.85" stroke-width="1.4" fill="none"></path><path d="M74 60C44 42 49 8 74 8C99 8 104 42 74 60z" fill="#2f7bff"></path><path d="M69 66L74 59L79 66z" fill="#2f7bff"></path><path d="M64 24Q60 33 63 40" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none"></path><path d="M364 93Q388.0 97.2 400 100" stroke="#ffffff" stroke-opacity="0.85" stroke-width="1.4" fill="none"></path><path d="M364 88C334 70 339 36 364 36C389 36 394 70 364 88z" fill="#2fbf71"></path><path d="M359 94L364 87L369 94z" fill="#2fbf71"></path><path d="M354 52Q350 61 353 68" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none"></path><path d="M446 97Q417.0 98.8 400 100" stroke="#ffffff" stroke-opacity="0.85" stroke-width="1.4" fill="none"></path><path d="M446 92C416 74 421 40 446 40C471 40 476 74 446 92z" fill="#ffc933"></path><path d="M441 98L446 91L451 98z" fill="#ffc933"></path><path d="M436 56Q432 65 435 72" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none"></path><path d="M406 65Q397.0 86.0 400 100" stroke="#ffffff" stroke-opacity="0.85" stroke-width="1.4" fill="none"></path><path d="M406 60C376 42 381 8 406 8C431 8 436 42 406 60z" fill="#ef4444"></path><path d="M401 66L406 59L411 66z" fill="#ef4444"></path><path d="M396 24Q392 33 395 40" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none"></path></svg>
+<svg width="480" height="64" viewBox="0 0 480 64" fill="none" style="position: absolute; left: 0; top: 296px" aria-hidden="true">
+<path d="M0 12H226L218 36H0L10 24z" fill="#f58220"></path><path d="M0 30H220L218 36H0L3 33z" fill="#c4590a"></path>
+<path d="M262 12H480L470 24L480 36H254z" fill="#f58220"></path><path d="M258 30H477L480 36H254z" fill="#c4590a"></path>
+<path d="M196 36H218L212 56L206 50L198 55z" fill="#f58220"></path><path d="M254 36H276L270 54L264 49L257 55z" fill="#f58220"></path>
+<g transform="translate(240 24) rotate(-90) scale(1.7) translate(-12 -12)"><g stroke="#0a003d" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="6" cy="6" r="3"></circle><path d="M8.12 8.12 12 12"></path><path d="M20 4 8.12 15.88"></path><circle cx="6" cy="18" r="3"></circle><path d="M14.8 14.8 20 20"></path></g><g stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="6" cy="6" r="3"></circle><path d="M8.12 8.12 12 12"></path><path d="M20 4 8.12 15.88"></path><circle cx="6" cy="18" r="3"></circle><path d="M14.8 14.8 20 20"></path></g></g>
+</svg>
+<div style="position: absolute; left: 139px; top: 364px; width: 202px; height: 40px; box-sizing: border-box; background: #ffffff; border-radius: 12px; box-shadow: 0 10px 24px rgba(10,0,61,.28); padding: 0 12px 0 8px; display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; border-radius: 50%; background: #1f8a5a; display: flex; align-items: center; justify-content: center; flex: none"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span style="font-size: 12.5px; font-weight: 600; color: #1f1f29; white-space: nowrap; flex: 1">New inquiry</span><span style="font-size: 11.5px; color: #6b6b76; white-space: nowrap">Just now</span></div>
+
+</div>
+<div style="position: relative; max-width: 600px; display: flex; flex-direction: column">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 44px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; color: var(--White, #ffffff); text-wrap: balance">Ready to Get Your Business Online?</h2>
+<p style="font-size: 19px; line-height: 1.55; color: #f1ebff; margin-top: 20px; text-wrap: pretty">Let's plan your project together.</p>
+<div style="margin-top: 36px">
+<a class="zl-btn-light" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; background: #ffffff; color: var(--Dark-Purple, #0a003d); font-size: 16px; font-weight: 600; padding: 16px 28px; border-radius: 12px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="color: inherit" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+Message Us on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer id="contact" style="position: relative; overflow: hidden; background: linear-gradient(180deg, #f3eeff 0%, #ebe2ff 55%, #e2d6ff 100%); flex: 1; display: flex; flex-direction: column">
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none">
+<svg viewBox="0 0 1440 260" preserveAspectRatio="none" fill="none" style="position: absolute; left: 0; bottom: 0; width: 100%; height: 240px"><path d="M0 120C240 40 480 40 720 110S1200 190 1440 90V260H0Z" fill="#7132ff" fill-opacity=".06"></path><path d="M0 170C300 110 600 120 900 170S1300 220 1440 160V260H0Z" fill="#7132ff" fill-opacity=".07"></path><path d="M0 215C360 175 720 205 1080 225S1340 235 1440 215V260H0Z" fill="#7132ff" fill-opacity=".08"></path></svg>
+<div style="position: absolute; left: -160px; top: 40px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(113,50,255,.18) 0%, rgba(113,50,255,0) 70%)"></div>
+<div style="position: absolute; right: -180px; bottom: -200px; width: 640px; height: 640px; border-radius: 50%; background: radial-gradient(circle, rgba(113,50,255,.22) 0%, rgba(113,50,255,0) 70%)"></div>
+</div>
+<div style="position: relative; width: 100%; max-width: 1280px; margin: 0 auto; padding: 72px 40px 0; box-sizing: border-box; flex: 1; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: 1.5fr 1fr 1.3fr 1.5fr; gap: 40px">
+
+<div>
+<a href="index.html" aria-label="Zentic Lab home" style="display: block; line-height: 0">
+<svg viewBox="398 872 1205 276" width="240" height="55" role="img" aria-label="Zentic Lab" style="display: block">
+<g fill="#7132ff">
+<path d="M812.04,993.26h98.18v25.79h-141.1v-25.79l89.13-76.04,7.31-5.58h-95.87v-25.8h138.6v25.8l-89.13,76.23-7.12,5.39Z"></path>
+<path d="M962.57,992.49v-26.76h95.48v-26.19h-95.48v-27.14h95.48v-26.56h-124.54v133.21h124.54v-26.57h-95.48Z"></path>
+<polygon points="1198.04 885.84 1227.1 885.84 1227.1 1044.67 1106.79 930.31 1106.79 1019.05 1077.91 1019.05 1077.91 860.17 1198.04 974.59 1198.04 885.84"></polygon>
+<path d="M1245.82,885.84v27.71h51.77v105.5h29.64v-105.5h54.48v-27.71h-135.89Z"></path>
+<path d="M1400.69,1019.05v-133.21h29.45v133.21h-29.45Z"></path>
+<path d="M1596.65,993.84h-73.99c-26.18,0-41.58-16.55-41.77-41.39v-.19c0-24.45,15.59-41.2,41.77-41.2h73.99v-26.95h-73.99c-44.47,0-71.03,26.95-71.03,68.15v.19c0,41.39,26.57,68.34,71.03,68.34h73.99v-26.95Z"></path>
+<path d="M726.97,879.61l-136.28,201.09h-50.41l117.89-165.44h-128.7c-41.77,0-75.63,33.86-75.63,75.63v44.07l-35.65,35.65v-85.17c0-58.45,47.38-105.83,105.83-105.83h202.96Z"></path>
+</g>
+<g fill="#200093">
+<path d="M781.09,1128.82v-85.39h-11.98v96.39h103.53l8.36-11.01h-99.92Z"></path>
+<path d="M1051.59,1139.82h-13.09l-18.39-24.38h-95.14l-18.39,24.38h-13.09l73.27-96.39h11.42l73.41,96.39ZM972.61,1053.19l-40.53,52.79h80.93l-40.39-52.79Z"></path>
+<path d="M1213.04,1113.92c0,17.69-12.26,25.91-34.96,25.91h-106.14v-96.39h100.85c23.12,0,34.96,7.8,34.96,24.79,0,12.81-6.69,19.64-19.78,22.01,15.88,1.53,25.07,8.36,25.07,23.68ZM1083.5,1052.91v33.15h89.15c15.88,0,23.54-5.02,23.54-16.58s-7.8-16.58-23.4-16.58h-89.29ZM1083.5,1130.35h94.58c15.74,0,23.4-5.29,23.4-17.55s-7.52-17.55-23.68-17.55h-94.3v35.1Z"></path>
+<path d="M403.35,1139.83l147.61-201.09h50.41l-124.63,165.44h124.11c41.77,0,75.63-33.86,75.63-75.63v-35.15l35.65-35.65v76.25c0,58.45-47.38,105.83-105.83,105.83h-202.96Z"></path>
+</g>
+</svg>
+</a>
+<p style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #200093; margin-top: 24px; max-width: 300px">Your Partner in Digital Growth</p>
+<div style="display: flex; align-items: center; gap: 12px; margin-top: 28px">
+<a class="zl-social" href="#" aria-label="Facebook" style="width: 40px; height: 40px; border-radius: 50%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background: #1877f2"><svg width="31" height="31" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M14 8h3V5h-3a4 4 0 0 0-4 4v2H7v3h3v7h3.2v-7h3l.6-3h-3.6V9.200c0-.7.3-1.200 1.100-1.200z"></path></svg></a>
+<a class="zl-social" href="#" aria-label="Instagram" style="width: 40px; height: 40px; border-radius: 50%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.500 6.500h.01" stroke-width="2.600"></path></svg></a>
+<a class="zl-social" href="#" aria-label="LinkedIn" style="width: 40px; height: 40px; border-radius: 50%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background: #0a66c2"><svg width="26" height="26" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><rect x="3.500" y="9" width="3.600" height="11"></rect><circle cx="5.300" cy="5.200" r="2.100"></circle><path d="M10 9h3.400v1.600c.5-.9 1.700-1.900 3.600-1.900 3.600 0 4.400 2.300 4.400 5.400V20h-3.600v-5.200c0-1.400-.1-2.900-1.800-2.900s-2.100 1.300-2.100 2.800V20H10z"></path></svg></a>
+</div>
+</div>
+
+<div>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 17px; font-weight: 700; color: var(--Dark-Purple, #0a003d)"><a class="zl-foot-link" href="services.html" style="color: var(--Dark-Purple, #0a003d)">Services</a></h3>
+<ul style="list-style: none; padding: 0; margin-top: 20px; display: flex; flex-direction: column; gap: 14px">
+<li><a class="zl-foot-link" href="ecommerce.html" style="font-size: 15.5px; color: #4a4565">E-Commerce Website</a></li>
+<li><a class="zl-foot-link" href="business.html" style="font-size: 15.5px; color: #4a4565">Business Website</a></li>
+</ul>
+</div>
+
+<div>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 17px; font-weight: 700; color: var(--Dark-Purple, #0a003d)"><a class="zl-foot-link" href="hosting-care.html" style="color: var(--Dark-Purple, #0a003d)">Hosting &amp; Care</a></h3>
+<ul style="list-style: none; padding: 0; margin-top: 20px; display: flex; flex-direction: column; gap: 14px">
+<li><a class="zl-foot-link" href="domain-hosting-plans.html" style="font-size: 15.5px; color: #4a4565">Domain &amp; Hosting Plans</a></li>
+<li><a class="zl-foot-link" href="content-update-plans.html" style="font-size: 15.5px; color: #4a4565">Content Update Plans</a></li>
+<li><a class="zl-foot-link" href="security-maintenance-plans.html" style="font-size: 15.5px; color: #4a4565">Security &amp; Maintenance Plans</a></li>
+</ul>
+</div>
+
+<div>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 17px; font-weight: 700; color: var(--Dark-Purple, #0a003d)">Contact</h3>
+<ul style="list-style: none; padding: 0; margin-top: 20px; display: flex; flex-direction: column; gap: 18px">
+<li style="display: flex; align-items: center; gap: 14px">
+<span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex: none"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="0.500" y="0.500" width="23" height="23" rx="6.500" fill="#00c03b"></rect><path d="M7.730 15.870A6.600 6.600 0 1 1 11.480 17.740L6.300 19.300Z" fill="none" stroke="#ffffff" stroke-width="1.700" stroke-linejoin="round"></path><path transform="translate(7.600 6.400) scale(.4)" d="M22 16.920v3a2 2 0 0 1-2.180 2 19.790 19.790 0 0 1-8.630-3.070 19.500 19.500 0 0 1-6-6 19.790 19.790 0 0 1-3.070-8.670A2 2 0 0 1 4.110 2h3a2 2 0 0 1 2 1.720 12.840 12.840 0 0 0 .7 2.810 2 2 0 0 1-.45 2.110L8.090 9.910a16 16 0 0 0 6 6l1.270-1.270a2 2 0 0 1 2.110-.45 12.840 12.840 0 0 0 2.810.7A2 2 0 0 1 22 16.920z" fill="#ffffff"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #6b6485">WhatsApp</span>
+<a class="zl-foot-link" href="https://wa.me/8801814090134" style="font-size: 15.5px; color: #0a003d">+8801814090134</a>
+</div>
+</li>
+<li style="display: flex; align-items: center; gap: 14px">
+<span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex: none"><svg width="30" height="22.500" viewBox="0 0 24 18" fill="none" aria-hidden="true"><path d="M0 4.600L5.500 8.500V18H1.800A1.800 1.800 0 0 1 0 16.200Z" fill="#4285f4"></path><path d="M0 4.600V2.800A2.800 2.800 0 0 1 4.400.5L5.500 1.300V8.500Z" fill="#c5221f"></path><path d="M5.500 1.800L12 6.400 18.500 1.800V8.500L12 13.400 5.500 8.500Z" fill="#ea4335"></path><path d="M18.500 1.300L19.600.5A2.800 2.800 0 0 1 24 2.800V4.600L18.500 8.500Z" fill="#fbbc04"></path><path d="M24 4.600V16.200A1.800 1.800 0 0 1 22.200 18H18.500V8.500Z" fill="#34a853"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #6b6485">Email</span>
+<a class="zl-foot-link" href="mailto:zenticlab@gmail.com" style="font-size: 15.5px; color: #0a003d">zenticlab@gmail.com</a>
+</div>
+</li>
+<li style="display: flex; align-items: center; gap: 14px">
+<span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex: none"><svg width="21" height="29.800" viewBox="0 0 24 34" fill="none" aria-hidden="true"><defs><clipPath id="zlpin"><path d="M12 0C5.400 0 0 5.300 0 11.900c0 3.300 1.400 6.300 3.600 9L8.900 27.500C10 29 10.500 30.500 10.800 32 11 33.500 11.800 34 12 34s1-.5 1.200-2c.3-1.500.8-3 1.900-4.500L20.400 20.900C22.600 18.200 24 15.200 24 11.900 24 5.300 18.600 0 12 0Z"></path></clipPath></defs><g clip-path="url(#zlpin)"><rect x="-2" y="-2" width="28" height="38" fill="#34a853"></rect><path d="M-1 -1H15.500V0.400L8.500 8.800 2.600 4 5 -1Z" fill="#1a73e8"></path><path d="M15.500 -1H26V5.500L22.900 6.200 15.900 13.500 8.500 8.800 15.500 0.400Z" fill="#4285f4"></path><path d="M2.600 4L8.500 8.800 1.100 17.200 -1 17.200 -1 4Z" fill="#ea4335"></path><path d="M1.100 17.200L8.500 8.800 15.900 13.500 6.600 24.900H-1V17.200Z" fill="#fbbc04"></path></g><circle cx="12" cy="11.700" r="4.600" fill="#ffffff"></circle></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #6b6485">Address</span>
+<span style="font-size: 15.5px; color: #0a003d">Mirpur, Dhaka, Bangladesh</span>
+</div>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div style="margin-top: auto; padding-top: 64px">
+<div style="padding: 28px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; gap: 16px">
+<p style="font-size: 14.5px; color: #4a4565">© 2026 Zentic Lab. All rights reserved.</p>
+</div>
+</div>
+
+</div>
+</footer>
+
+</div>
+
+
+</body>
+</html>

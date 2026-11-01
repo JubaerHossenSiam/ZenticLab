@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Zentic Lab E-Commerce</title>
+
+<style>/* Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --Violet: #7132ff;
+  --Indigo: #200093;
+  --Dark-Purple: #0a003d;
+  --White: #ffffff;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#4a4565;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,p,ul{margin:0}
+.zl-nav:hover{color:#7132ff}
+.zl-dd{position:relative}
+.zl-dd-menu{display:none;position:absolute;top:100%;left:-20px;padding-top:14px;z-index:10}
+.zl-dd:hover .zl-dd-menu,.zl-dd:focus-within .zl-dd-menu{display:block}
+.zl-dd-item:hover{background:#f6f3ff}
+.zl-btn{transition:background .2s}
+.zl-btn:hover{background:#6228e6 !important}
+.zl-btn-light{transition:color .2s}
+.zl-btn-light:hover{color:#7132ff !important}
+.zl-lift{transition:border-color .25s ease}
+.zl-lift:hover{border-color:#c9b6fa !important}
+.zl-btn,.zl-btn-light{transition:background .2s,color .2s}
+.zl-qa{position:relative;overflow:hidden;border-radius:24px;background:#ffffff;border:1px solid #e4dbfb}
+.zl-qa-t{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.zl-qa-btn{cursor:pointer;border-radius:8px}
+.zl-qa-t:focus-visible ~ div .zl-qa-btn{outline:3px solid #cbbaf7;outline-offset:4px}
+.zl-qa-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:#ffffff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.zl-qa-close:hover{background:#f6f5fb}
+.zl-qa-back{position:absolute;left:0;top:0;right:0;bottom:0;background:#ebe8f5;display:flex;flex-direction:column;justify-content:center;opacity:0;transition:opacity .2s ease;pointer-events:none;box-sizing:border-box}
+.zl-qa-t:checked ~ .zl-qa-back{opacity:1;pointer-events:auto}
+.zl-qa-ill{flex:none}
+.zl-qa-link:hover{opacity:.85}
+.zl-btn-outline{transition:background .2s,color .2s}
+.zl-btn-outline:hover{background:#200093 !important;color:#ffffff !important}
+.zl-link:hover{color:#7132ff !important}
+.zl-card{transition:box-shadow .2s,transform .2s}
+.zl-card:hover{}
+.zl-foot-link:hover{color:#7132ff !important}
+.zl-social{transition:opacity .2s}
+.zl-social:hover{opacity:.88}
+a:focus-visible,button:focus-visible{outline:3px solid #7132ff;outline-offset:3px}
+.zl-faq{background:#ffffff;border:1px solid #e4dbfb;border-radius:16px;transition:border-color .2s,box-shadow .2s}
+.zl-faq:hover{border-color:#cdbcff}
+.zl-faq[open]{border-color:#bfa8ff;box-shadow:0 12px 30px rgba(32,0,147,.08)}
+.zl-faq-q{list-style:none;display:flex;align-items:center;gap:16px;padding:18px 22px;cursor:pointer;border-radius:16px}
+.zl-faq-q::-webkit-details-marker{display:none}
+.zl-faq-q:focus-visible{outline:3px solid #7132ff;outline-offset:2px}
+.zl-faq-icon{width:48px;height:48px;border-radius:14px;background:#efe9ff;display:flex;align-items:center;justify-content:center;flex:none}
+.zl-faq-title{flex:1;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:18px;line-height:1.45;font-weight:700;color:#0a003d}
+.zl-faq-chev{width:28px;height:28px;color:#7132ff;display:flex;align-items:center;justify-content:center;flex:none}
+.zl-vline{transition:opacity .15s}
+.zl-faq[open] .zl-vline{opacity:0}
+.zl-faq-a{padding:0 22px 24px 82px}
+.zl-faq-a p{font-size:15px;line-height:1.6;color:#4a4565}
+@media (max-width:640px){.zl-h1{font-size:38px !important}.zl-h2{font-size:30px !important}.zl-faq-a{padding-left:22px}}
+.zl-fq{position:relative;background:#ffffff;border:1px solid #e4dbfb;border-radius:24px;padding:28px 24px}
+.zl-fq:has(.zl-fq-t:checked){background:#ebe8f5;border-color:#d2cce9}
+.zl-fq-t{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.zl-fq-head{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.zl-fq-btn{cursor:pointer;flex:none;border-radius:8px;font-size:14px;font-weight:600;color:#200093;white-space:nowrap}
+.zl-fq-open,.zl-fq-hide{display:inline-flex;align-items:center;gap:8px}
+.zl-fq-hide{display:none}
+.zl-fq-t:checked ~ .zl-fq-head .zl-fq-open{display:none}
+.zl-fq-t:checked ~ .zl-fq-head .zl-fq-hide{display:inline-flex}
+.zl-fq-a{display:none;margin-top:16px;max-width:760px}
+.zl-fq-t:checked ~ .zl-fq-a{display:block}
+.zl-fq-t:focus-visible ~ .zl-fq-head .zl-fq-btn{outline:3px solid #cbbaf7;outline-offset:4px}
+</style>
+
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: var(--White, #ffffff)">
+
+<!-- 1. HEADER -->
+<header style="background: var(--White, #ffffff); border-bottom: 1px solid #ece5ff">
+<div style="max-width: 1280px; margin: 0 auto; padding: 18px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<a href="index.html" aria-label="Zentic Lab home" style="display: block; line-height: 0">
+<svg viewBox="398 872 1205 276" width="190" height="44" role="img" aria-label="Zentic Lab" style="display: block">
+<g fill="#7132ff">
+<path d="M812.04,993.26h98.18v25.79h-141.1v-25.79l89.13-76.04,7.31-5.58h-95.87v-25.8h138.6v25.8l-89.13,76.23-7.12,5.39Z"></path>
+<path d="M962.57,992.49v-26.76h95.48v-26.19h-95.48v-27.14h95.48v-26.56h-124.54v133.21h124.54v-26.57h-95.48Z"></path>
+<polygon points="1198.04 885.84 1227.1 885.84 1227.1 1044.67 1106.79 930.31 1106.79 1019.05 1077.91 1019.05 1077.91 860.17 1198.04 974.59 1198.04 885.84"></polygon>
+<path d="M1245.82,885.84v27.71h51.77v105.5h29.64v-105.5h54.48v-27.71h-135.89Z"></path>
+<path d="M1400.69,1019.05v-133.21h29.45v133.21h-29.45Z"></path>
+<path d="M1596.65,993.84h-73.99c-26.18,0-41.58-16.55-41.77-41.39v-.19c0-24.45,15.59-41.2,41.77-41.2h73.99v-26.95h-73.99c-44.47,0-71.03,26.95-71.03,68.15v.19c0,41.39,26.57,68.34,71.03,68.34h73.99v-26.95Z"></path>
+<path d="M726.97,879.61l-136.28,201.09h-50.41l117.89-165.44h-128.7c-41.77,0-75.63,33.86-75.63,75.63v44.07l-35.65,35.65v-85.17c0-58.45,47.38-105.83,105.83-105.83h202.96Z"></path>
+</g>
+<g fill="#200093">
+<path d="M781.09,1128.82v-85.39h-11.98v96.39h103.53l8.36-11.01h-99.92Z"></path>
+<path d="M1051.59,1139.82h-13.09l-18.39-24.38h-95.14l-18.39,24.38h-13.09l73.27-96.39h11.42l73.41,96.39ZM972.61,1053.19l-40.53,52.79h80.93l-40.39-52.79Z"></path>
+<path d="M1213.04,1113.92c0,17.69-12.26,25.91-34.96,25.91h-106.14v-96.39h100.85c23.12,0,34.96,7.8,34.96,24.79,0,12.81-6.69,19.64-19.78,22.01,15.88,1.53,25.07,8.36,25.07,23.68ZM1083.5,1052.91v33.15h89.15c15.88,0,23.54-5.02,23.54-16.58s-7.8-16.58-23.4-16.58h-89.29ZM1083.5,1130.35h94.58c15.74,0,23.4-5.29,23.4-17.55s-7.52-17.55-23.68-17.55h-94.3v35.1Z"></path>
+<path d="M403.35,1139.83l147.61-201.09h50.41l-124.63,165.44h124.11c41.77,0,75.63-33.86,75.63-75.63v-35.15l35.65-35.65v76.25c0,58.45-47.38,105.83-105.83,105.83h-202.96Z"></path>
+</g>
+</svg>
+</a>
+<nav aria-label="Main" style="display: flex; align-items: center; gap: 40px">
+<div class="zl-dd">
+<a class="zl-nav" href="services.html" style="display: inline-flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 500; color: var(--Dark-Purple, #0a003d); padding: 8px 0">Services
+<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-7 9z"></path></svg>
+</a>
+<div class="zl-dd-menu">
+<div style="background: #ffffff; border: 1px solid #e4dbfb; border-radius: 16px; padding: 8px; width: 340px; box-sizing: border-box; box-shadow: 0 16px 40px rgba(10,0,61,.12); display: flex; flex-direction: column; gap: 2px">
+<a class="zl-dd-item" href="ecommerce.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle><path d="M2 3h3l2.6 12.4a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L21 7H6"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">E-Commerce Website</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Sell your products online</span></span></a>
+<a class="zl-dd-item" href="business.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Business Website</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Show your business and get more leads</span></span></a>
+</div>
+</div>
+</div>
+<div class="zl-dd">
+<a class="zl-nav" href="hosting-care.html" style="display: inline-flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 600; color: #200093; padding: 8px 0">Hosting &amp; Care
+<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-7 9z"></path></svg>
+</a>
+<div class="zl-dd-menu">
+<div style="background: #ffffff; border: 1px solid #e4dbfb; border-radius: 16px; padding: 8px; width: 340px; box-sizing: border-box; box-shadow: 0 16px 40px rgba(10,0,61,.12); display: flex; flex-direction: column; gap: 2px">
+<a class="zl-dd-item" href="domain-hosting-plans.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><rect x="2" y="3" width="20" height="8" rx="2"></rect><rect x="2" y="13" width="20" height="8" rx="2"></rect><path d="M6 7h.01M6 17h.01"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Domain &amp; Hosting Plans</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Keep your website online and fast</span></span></a>
+<a class="zl-dd-item" href="content-update-plans.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M17 3a2.850 2.830 0 1 1 4 4L7.500 20.500 2 22l1.500-5.500z"></path><path d="M15 5l4 4"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Content Update Plans</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Text, photo and product changes</span></span></a>
+<a class="zl-dd-item" href="security-maintenance-plans.html" style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 10px; color: var(--Dark-Purple, #0a003d)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 15px; line-height: 1.4; font-weight: 600">Security &amp; Maintenance Plans</span><span style="font-size: 13.5px; line-height: 1.4; font-weight: 400; color: #6b6485">Updates, backups and security checks</span></span></a>
+</div>
+</div>
+</div>
+<a class="zl-nav" href="about.html" style="font-size: 16px; font-weight: 500; color: var(--Dark-Purple, #0a003d); padding: 8px 0">About Us</a>
+<a class="zl-nav" href="contact.html" style="font-size: 16px; font-weight: 500; color: var(--Dark-Purple, #0a003d); padding: 8px 0">Contact</a>
+</nav>
+<a class="zl-btn-outline" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid #200093; color: #200093; font-size: 15px; font-weight: 600; padding: 14.5px 22.5px; border-radius: 12px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+Message Us on WhatsApp</a>
+</div>
+</header>
+
+<!-- 2. HERO -->
+<section id="top" style="background: var(--White, #ffffff)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px 40px 96px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: 64px; align-items: center">
+<div style="display: flex; flex-direction: column; align-items: flex-start">
+<h1 class="zl-h1" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 52px; line-height: 1.2; font-weight: 800; letter-spacing: -0.025em; word-spacing: 0.1em; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Let Our Experts <span style="color: var(--Violet, #7132ff)">Protect</span> Your Website</h1>
+<p style="font-size: 19px; line-height: 1.55; color: #4a4565; margin-top: 24px; max-width: 520px; text-wrap: pretty">Updates, backups and security checks, handled by the people who built your website.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px">
+<a class="zl-btn" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; background: var(--Violet, #7132ff); color: #ffffff; font-size: 16px; font-weight: 600; padding: 16px 28px; border-radius: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>Message Us on WhatsApp</a>
+<a class="zl-qa-link" href="#plans" style="display: inline-flex; align-items: center; gap: 8px; color: #0a003d; font-size: 16px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px">See Security Plans
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg>
+</a>
+</div>
+</div>
+<div><svg viewBox="0 0 560 420" width="100%" fill="none" aria-hidden="true" style="display:block">
+<rect x="0" y="40" width="500" height="340" rx="46" fill="#f3f3f6"></rect><rect x="300" y="8" width="256" height="360" rx="46" fill="#f3f3f6"></rect>
+<rect x="40" y="50" width="340" height="290" rx="22" fill="#ffffff" stroke="#e6e6ea" stroke-width="1.5"></rect>
+<line x1="41" y1="82" x2="379" y2="82" stroke="#ececef"></line>
+<circle cx="62" cy="66" r="4.500" fill="#ff5f57"></circle><circle cx="77" cy="66" r="4.500" fill="#febc2e"></circle><circle cx="92" cy="66" r="4.500" fill="#28c840"></circle>
+<rect x="108" y="59" width="240" height="14" rx="7" fill="#ececef"></rect>
+<rect x="56" y="96" width="120" height="10" rx="5" fill="#200093"></rect><rect x="56" y="114" width="80" height="7" rx="3.500" fill="#d9d4ec"></rect>
+<rect x="56" y="136" width="268" height="44" rx="12" fill="#f6f3ff"></rect><rect x="64" y="142" width="32" height="32" rx="9" fill="#ffffff"></rect><g transform="translate(72 150) scale(0.67)" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.750 9.750 0 0 1 6.740 2.740L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.750 9.750 0 0 1-6.740-2.740L3 16"></path><path d="M8 16H3v5"></path></g><rect x="108" y="148" width="110" height="8" rx="4" fill="#c4bce3"></rect><rect x="108" y="162" width="70" height="6" rx="3" fill="#e0dbf0"></rect><circle cx="304" cy="158" r="11" fill="#1f8a5a"></circle><path d="M298.500 158.5l4 4 7-8" stroke="#fff" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round"></path><rect x="56" y="190" width="268" height="44" rx="12" fill="#f6f3ff"></rect><rect x="64" y="196" width="32" height="32" rx="9" fill="#ffffff"></rect><g transform="translate(72 204) scale(0.67)" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.500 19H9a7 7 0 1 1 6.710-9h1.790a4.500 4.500 0 1 1 0 9z"></path></g><rect x="108" y="202" width="92" height="8" rx="4" fill="#c4bce3"></rect><rect x="108" y="216" width="60" height="6" rx="3" fill="#e0dbf0"></rect><circle cx="304" cy="212" r="11" fill="#ffffff" stroke="#e4dff2" stroke-width="3"></circle><path d="M304 201a11 11 0 0 1 11 11" stroke="#200093" stroke-width="3" stroke-linecap="round"></path><rect x="56" y="244" width="268" height="44" rx="12" fill="#f6f3ff"></rect><rect x="64" y="250" width="32" height="32" rx="9" fill="#ffffff"></rect><g transform="translate(72 258) scale(0.67)" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></g><rect x="108" y="256" width="120" height="8" rx="4" fill="#c4bce3"></rect><rect x="108" y="270" width="76" height="6" rx="3" fill="#e0dbf0"></rect><circle cx="304" cy="266" r="11" fill="#1f8a5a"></circle><path d="M298.500 266.5l4 4 7-8" stroke="#fff" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round"></path><rect x="56" y="294" width="268" height="44" rx="12" fill="#f6f3ff"></rect><rect x="64" y="300" width="32" height="32" rx="9" fill="#ffffff"></rect><g transform="translate(72 308) scale(0.67)" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></g><rect x="108" y="306" width="84" height="8" rx="4" fill="#c4bce3"></rect><rect x="108" y="320" width="56" height="6" rx="3" fill="#e0dbf0"></rect><circle cx="304" cy="316" r="11" fill="#ffffff" stroke="#e4dff2" stroke-width="3"></circle><path d="M304 305a11 11 0 0 1 11 11" stroke="#200093" stroke-width="3" stroke-linecap="round"></path>
+<rect x="338" y="100" width="192" height="148" rx="22" fill="#ffffff" stroke="#e6e6ea" stroke-width="1.5"></rect>
+<circle cx="398" cy="174" r="38" fill="none" stroke="#e9e6f4" stroke-width="12"></circle><path d="M398 136a38 38 0 0 1 32.900 19" stroke="#200093" stroke-width="12" stroke-linecap="round"></path>
+<g transform="translate(385 161) scale(1.08)" fill="none" stroke="#200093" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></g>
+<rect x="452" y="146" width="58" height="9" rx="4.500" fill="#d9d4ec"></rect><rect x="452" y="164" width="40" height="7" rx="3.500" fill="#e9e6f4"></rect><rect x="452" y="186" width="58" height="22" rx="11" fill="#e9e6f4"></rect><rect x="462" y="193" width="38" height="8" rx="4" fill="#c4bce3"></rect>
+<circle cx="520" cy="262" r="24" fill="#200093" stroke="#ffffff" stroke-width="4"></circle><g transform="translate(508 250) scale(1)" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M14.700 6.300a1 1 0 0 0 0 1.400l1.600 1.600a1 1 0 0 0 1.400 0l3.770-3.770a6 6 0 0 1-7.940 7.940l-6.910 6.910a2.120 2.120 0 0 1-3-3l6.910-6.910a6 6 0 0 1 7.940-7.940l-3.760 3.760z"></path></g>
+</svg></div>
+</div>
+</section>
+
+<!-- WHY PROTECTION -->
+<section style="background: #faf8ff; padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="text-align: center; max-width: 780px; margin: 0 auto">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; word-spacing: 0.1em; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Why Your Website Needs Protection</h2>
+<p style="font-size: 18px; line-height: 1.55; margin-top: 16px; text-wrap: pretty">A website that is not looked after can lose you customers.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px">
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><path d="M30 62a40 40 0 0 1 50 0M38 70a28 28 0 0 1 34 0" stroke="#c4bce3" stroke-width="4" stroke-linecap="round" fill="none"></path><circle cx="55" cy="77" r="3.500" fill="#a599d3"></circle><path d="M32 44l46 36" stroke="#a599d3" stroke-width="4" stroke-linecap="round"></path><rect x="14" y="34" width="34" height="5" rx="2.500" fill="#d9d4ec"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10.300 3.900L1.800 18a2 2 0 0 0 1.700 3h17a2 2 0 0 0 1.700-3L13.700 3.900a2 2 0 0 0-3.400 0z"></path><path d="M12 9v4M12 17h.01"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance; min-height: 62px">Hacks and Downtime Cost You Customers</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">If your website goes down or is hacked, your customers cannot reach you, and your data can reach the wrong hands.</p>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><rect x="14" y="34" width="82" height="12" rx="5" fill="#e9e6f4"></rect><rect x="14" y="52" width="82" height="12" rx="5" fill="#e9e6f4"></rect><rect x="14" y="70" width="82" height="12" rx="5" fill="#e9e6f4"></rect><rect x="70" y="54" width="22" height="8" rx="4" fill="#a599d3"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.750 9.750 0 0 1 6.740 2.740L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.750 9.750 0 0 1-6.740-2.740L3 16"></path><path d="M8 16H3v5"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance; min-height: 62px">Old Software Opens the Door</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">Old plugins and software are a common way websites get hacked. Regular updates close those doors.</p>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column; align-items: flex-start">
+<svg width="160" height="110" viewBox="0 0 160 110" fill="none" aria-hidden="true"><rect x="2" y="10" width="106" height="78" rx="10" fill="#fff" stroke="#d9d4ec" stroke-width="2"></rect><path d="M3 20a9 9 0 0 1 9-9h86a9 9 0 0 1 9 9v6H3z" fill="#e9e6f4"></path><circle cx="13" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="22" cy="19" r="2.5" fill="#c4bce3"></circle><circle cx="31" cy="19" r="2.5" fill="#c4bce3"></circle><rect x="14" y="34" width="82" height="10" rx="5" fill="#e9e6f4"></rect><rect x="14" y="50" width="82" height="10" rx="5" fill="#e9e6f4"></rect><rect x="14" y="66" width="82" height="10" rx="5" fill="#e9e6f4"></rect><rect x="10" y="47" width="90" height="16" rx="8" fill="#a599d3" fill-opacity="0.35" stroke="#a599d3" stroke-width="1.500"></rect><circle cx="124" cy="70" r="22" fill="#a599d3" stroke="#fff" stroke-width="4"></circle><g transform="translate(112 58)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.300-4.300"></path></g></svg>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); margin-top: 22px; text-wrap: balance; min-height: 62px">Problems Stopped Early</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px; text-wrap: pretty">We check and back up your website, so serious problems become rare.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PLANS -->
+<section id="plans" style="background: var(--White, #ffffff); padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="text-align: center; max-width: 780px; margin: 0 auto">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; word-spacing: 0.1em; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Our Security &amp; Maintenance Plans</h2>
+<p style="font-size: 18px; line-height: 1.55; margin-top: 16px; text-wrap: pretty">Choose one plan. Both plans are paid once a year.</p>
+</div>
+<div style="max-width: 960px; margin: 56px auto 0">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; align-items: stretch">
+<div style="position: relative; background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 36px 24px; display: flex; flex-direction: column">
+
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 30px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em; color: var(--Dark-Purple, #0a003d)">Essential Care</h3>
+<p style="font-size: 15px; line-height: 1.5; font-style: italic; color: #4a4565; margin-top: 8px; min-height: 46px">For websites that need regular upkeep and protection</p>
+<div style="height: 1px; background: #ece5ff; margin: 18px 0 20px"></div>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093">Included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>2 hours every month of technical upkeep</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Performance checks</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Software updates</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Basic security</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Regular backups</li>
+</ul>
+<div style="margin-top: auto; padding-top: 32px">
+<p style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 44px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: #200093">12,000 <span style="font-size: 20px; font-weight: 700; letter-spacing: 0">BDT per year</span></p>
+<a class="zl-btn-outline" href="https://wa.me/8801814090134" style="display: flex; align-items: center; justify-content: center; margin-top: 24px; border: 1.5px solid #200093; color: #200093; background: #ffffff; font-size: 16px; font-weight: 600; padding: 15px 24px; border-radius: 12px">Get Started</a>
+</div>
+</div>
+<div style="position: relative; background: #ffffff; border: 2px solid #7132ff; border-radius: 24px; padding: 35.5px 23.5px; display: flex; flex-direction: column">
+<span style="position: absolute; top: -15px; left: 34px; font-size: 13px; font-weight: 700; color: #ffffff; background: #7132ff; border-radius: 999px; padding: 6px 16px; line-height: 1.3">Recommended</span>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 30px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em; color: var(--Dark-Purple, #0a003d)">Complete Care</h3>
+<p style="font-size: 15px; line-height: 1.5; font-style: italic; color: #4a4565; margin-top: 8px; min-height: 46px">For websites that need full protection, day and night</p>
+<div style="height: 1px; background: #ece5ff; margin: 18px 0 20px"></div>
+<p style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #200093">Included</p>
+<ul style="list-style: none; padding: 0; margin-top: 18px; display: flex; flex-direction: column; gap: 13px">
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Everything in Essential Care</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>24/7 monitoring</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Break-in attempts blocked at once</li>
+<li style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #2c2548"><span style="flex: none; width: 22px; height: 22px; border-radius: 50%; background: #e9e6f4; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Instant alerts to our team</li>
+</ul>
+<div style="margin-top: auto; padding-top: 32px">
+<p style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 44px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: #200093">24,000 <span style="font-size: 20px; font-weight: 700; letter-spacing: 0">BDT per year</span></p>
+<a class="zl-btn" href="https://wa.me/8801814090134" style="display: flex; align-items: center; justify-content: center; margin-top: 24px; background: var(--Violet, #7132ff); color: #ffffff; font-size: 16px; font-weight: 600; padding: 16px 24px; border-radius: 12px">Get Started</a>
+</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 24px">
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 28px 24px; display: flex; gap: 16px; align-items: flex-start">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #e9e6f4; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 20px; height: 20px"><path d="M14.700 6.300a1 1 0 0 0 0 1.400l1.600 1.600a1 1 0 0 0 1.400 0l3.770-3.770a6 6 0 0 1-7.940 7.940l-6.910 6.910a2.120 2.120 0 0 1-3-3l6.910-6.910a6 6 0 0 1 7.940-7.940l-3.760 3.760z"></path></svg></span>
+<div><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 20px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d)">Fixing a problem</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 8px; text-wrap: pretty">Fixing a problem uses your monthly upkeep hours. The 24/7 monitoring in Complete Care does not.</p></div>
+</div>
+<div style="background: #ffffff; border: 1.5px solid #e4dbfb; border-radius: 24px; padding: 28px 24px; display: flex; gap: 16px; align-items: flex-start">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #efeff3; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#5b5b66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 20px; height: 20px"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>
+<div><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 20px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d)">Not included</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 8px; text-wrap: pretty">Domain and hosting renewal, content changes, new pages or new features, and design changes.</p></div>
+</div>
+</div>
+<div style="margin-top: 24px; background: #f6f3ff; border-radius: 24px; padding: 28px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<div style="display: flex; align-items: center; gap: 16px">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #ffffff; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 24px; height: 24px"><path d="M17 3a2.850 2.830 0 1 1 4 4L7.500 20.500 2 22l1.500-5.500z"></path><path d="M15 5l4 4"></path></svg></span>
+<div><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 20px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d)">Need help with content changes too?</h3>
+<p style="font-size: 16px; line-height: 1.5; color: #4a4565; margin-top: 4px">See our Content Update Plans.</p></div>
+</div>
+<a class="zl-btn-outline" href="content-update-plans.html" style="display: flex; width: fit-content; flex: none; align-items: center; justify-content: center; gap: 8px; border: 1.5px solid #200093; color: #200093; background: #ffffff; font-size: 16px; font-weight: 600; padding: 15px 24px; border-radius: 12px">See Content Plans
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section  style="background: #faf8ff; padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center">
+<div style="display: flex; flex-direction: column; align-items: flex-start">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; word-spacing: 0.1em; color: var(--Dark-Purple, #0a003d); text-wrap: balance; text-align: left">Not Sure Which Plan Fits Your Website?</h2>
+<p style="font-size: 18px; line-height: 1.6; margin-top: 16px; max-width: 520px; text-wrap: pretty">Tell us about your website, and we will suggest the right plan.</p>
+<div style="margin-top: 32px">
+<a class="zl-btn" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; background: var(--Violet, #7132ff); color: #ffffff; font-size: 16px; font-weight: 600; padding: 16px 28px; border-radius: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>Message Us on WhatsApp</a>
+</div>
+</div>
+<div><svg viewBox="0 0 480 372" width="100%" fill="none" aria-hidden="true" style="display:block">
+<rect x="0" y="36" width="430" height="320" rx="46" fill="#f3f1fa"></rect><rect x="250" y="6" width="226" height="330" rx="46" fill="#f3f1fa"></rect>
+<rect x="20" y="46" width="440" height="189" rx="22" fill="#ffffff" stroke="#e4dbfb" stroke-width="1.500"></rect>
+<rect x="40" y="70" width="190" height="141" rx="18" fill="#ffffff" stroke="#e4dbfb" stroke-width="1.500"></rect><rect x="111" y="94" width="48" height="48" rx="14" fill="#e9e6f4"></rect><g transform="translate(123 106) scale(1.0)" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></g><text x="135" y="184" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#200093">Essential</text><rect x="250" y="70" width="190" height="141" rx="18" fill="#ffffff" stroke="#e4dbfb" stroke-width="1.500"></rect><rect x="321" y="94" width="48" height="48" rx="14" fill="#e9e6f4"></rect><g transform="translate(333 106) scale(1.0)" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></g><text x="345" y="184" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#200093">Complete</text><circle cx="371" cy="96" r="13" fill="#200093" stroke="#ffffff" stroke-width="3"></circle><g transform="translate(363 88) scale(0.67)" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></g>
+<rect x="146" y="268" width="196" height="52" rx="26" fill="#ffffff" stroke="#e4dbfb" stroke-width="1.500"></rect>
+<circle cx="186" cy="294" r="6" fill="#c4bce3"></circle><circle cx="208" cy="294" r="6" fill="#a599d3"></circle><circle cx="230" cy="294" r="6" fill="#200093"></circle>
+<rect x="258" y="290" width="64" height="8" rx="4" fill="#e9e6f4"></rect>
+</svg></div>
+</div>
+</div>
+</section>
+
+<section style="background: #ffffff; padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="text-align: center; max-width: 780px; margin: 0 auto">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; word-spacing: 0.1em; color: var(--Dark-Purple, #0a003d); text-wrap: balance">How It Works</h2>
+<p style="font-size: 18px; line-height: 1.55; margin-top: 16px; text-wrap: pretty">Simple and clear, from start to finish.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 64px">
+<div class="zl-lift" style="position: relative; overflow: hidden; background: #ffffff; border: 1px solid #e4dbfb; border-radius: 24px; padding: 76px 24px 36px">
+<span aria-hidden="true" class="zl-corner" style="position: absolute; top: 0px; right: 12px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 80px; line-height: 1; font-weight: 800; color: #e9e6f4; user-select: none; pointer-events: none">1</span>
+<h3 style="position: relative; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 24px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); min-height: 68px">Choose a Plan</h3>
+<p style="position: relative; font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px">Pick Essential Care or Complete Care. You pay once a year, and the plan runs for one year.</p>
+</div>
+<div class="zl-lift" style="position: relative; overflow: hidden; background: #ffffff; border: 1px solid #e4dbfb; border-radius: 24px; padding: 76px 24px 36px">
+<span aria-hidden="true" class="zl-corner" style="position: absolute; top: 0px; right: 12px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 80px; line-height: 1; font-weight: 800; color: #e9e6f4; user-select: none; pointer-events: none">2</span>
+<h3 style="position: relative; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 24px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); min-height: 68px">Start When You Want</h3>
+<p style="position: relative; font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px">Your plan starts from your website launch, or any time after.</p>
+</div>
+<div class="zl-lift" style="position: relative; overflow: hidden; background: #ffffff; border: 1px solid #e4dbfb; border-radius: 24px; padding: 76px 24px 36px">
+<span aria-hidden="true" class="zl-corner" style="position: absolute; top: 0px; right: 12px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 80px; line-height: 1; font-weight: 800; color: #e9e6f4; user-select: none; pointer-events: none">3</span>
+<h3 style="position: relative; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 24px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); min-height: 68px">We Look After It</h3>
+<p style="position: relative; font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px">Every month we update, check and back up your website. Upkeep hours are used in full every month.</p>
+</div>
+<div class="zl-lift" style="position: relative; overflow: hidden; background: #ffffff; border: 1px solid #e4dbfb; border-radius: 24px; padding: 76px 24px 36px">
+<span aria-hidden="true" class="zl-corner" style="position: absolute; top: 0px; right: 12px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 80px; line-height: 1; font-weight: 800; color: #e9e6f4; user-select: none; pointer-events: none">4</span>
+<h3 style="position: relative; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 24px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); min-height: 68px">Stop Any Time</h3>
+<p style="position: relative; font-size: 16px; line-height: 1.6; color: #4a4565; margin-top: 12px">Your plan is optional. If you stop, it just does not renew for the next year.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 6. COMMON QUESTIONS -->
+<section style="background: #faf8ff; padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="text-align: center; max-width: 780px; margin: 0 auto">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; color: var(--Dark-Purple, #0a003d)">Common Questions</h2>
+<p style="font-size: 18px; line-height: 1.55; margin-top: 16px">Everything you may want to know before you start.</p>
+</div>
+<div style="max-width: 900px; margin: 56px auto 0; display: flex; flex-direction: column; gap: 16px">
+<div class="zl-fq"><input type="checkbox" id="fq1" class="zl-fq-t" aria-label="Show answer" checked>
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Do I need a security plan?</h3>
+<label for="fq1" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">No, it is optional. But a website needs updates, backups and security checks to stay healthy. You can do this yourself, or we can do it for you.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq2" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">What is the difference between Essential and Complete Care?</h3>
+<label for="fq2" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Essential Care keeps your website updated, checked and backed up. Complete Care adds 24/7 monitoring, blocks break-in attempts at once, and alerts our team right away.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq3" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Can I take a plan if I use my own hosting?</h3>
+<label for="fq3" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Yes. A plan works with your own hosting too, if the hosting is fast and secure.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq4" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Does fixing a problem use my hours?</h3>
+<label for="fq4" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Yes. When we fix a problem, the time comes from your monthly hours. The 24/7 monitoring in Complete Care is part of the plan and does not use your hours.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq5" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">What if my website breaks or is hacked?</h3>
+<label for="fq5" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">With Complete Care, we watch your website all day and block break-in attempts. With either plan, we can restore your website from a backup if something goes wrong.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq6" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">What happens to my upkeep hours?</h3>
+<label for="fq6" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Upkeep hours are used in full every month, to keep your website healthy.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq7" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Does this plan include content changes?</h3>
+<label for="fq7" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">No. Changes to your text, photos and products are in our Content Update Plans. You can take both.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq8" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">When does my plan start, and how do I pay?</h3>
+<label for="fq8" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Your plan can start when your website goes live, or any time after. You pay once a year, by bKash, Nagad or bank.</p>
+</div>
+</div>
+<div class="zl-fq"><input type="checkbox" id="fq9" class="zl-fq-t" aria-label="Show answer">
+<div class="zl-fq-head"><h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 22px; line-height: 1.4; font-weight: 800; color: var(--Dark-Purple, #0a003d); text-wrap: balance">Can I stop my plan?</h3>
+<label for="fq9" class="zl-fq-btn" aria-label="Show or hide answer"><span class="zl-fq-open"><svg style="transform: rotate(90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span><span class="zl-fq-hide"><svg style="transform: rotate(-90deg)" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.500 12h9M12.500 8l4 4-4 4"></path></svg></span></label></div>
+<div class="zl-fq-a"><p style="font-size: 17px; line-height: 1.6; color: #0a003d">Yes. You can stop any time. The plan just does not renew for the next year.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 7. FINAL CTA -->
+<section style="background: linear-gradient(to bottom, #faf8ff 50%, #f3eeff 50%); padding: 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<div style="position: relative; overflow: hidden; background: var(--Violet, #7132ff); border-radius: 32px; padding: 123px 72px">
+<!-- cta visual -->
+<div style="position: absolute; right: 48px; top: 50%; transform: translateY(-50%); width: 480px; height: 420px" aria-hidden="true">
+<svg width="480" height="420" viewBox="0 0 480 420" fill="none" style="position: absolute; inset: 0">
+<g stroke="#ffffff" fill="none">
+<circle cx="240" cy="210" r="110" stroke-opacity="0.16" stroke-width="1.5"></circle>
+<circle cx="240" cy="210" r="165" stroke-opacity="0.11" stroke-width="1.5"></circle>
+<circle cx="240" cy="210" r="220" stroke-opacity="0.07" stroke-width="1.5"></circle>
+</g>
+
+</svg>
+
+<div style="position: absolute; left: 48px; top: 72px; width: 384px; box-sizing: border-box; background: #ffffff; border-radius: 20px; box-shadow: 0 18px 44px rgba(10,0,61,.38); padding: 20px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 12px"><span style="width: 40px; height: 40px; border-radius: 12px; background: #e9e6f4; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 22px; height: 22px"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg></span><span style="display: flex; flex-direction: column; gap: 7px; flex: 1"><span style="height: 9px; width: 110px; border-radius: 5px; background: #d9d4ec"></span><span style="height: 7px; width: 70px; border-radius: 4px; background: #e9e6f4"></span></span><span style="padding: 5px 12px; border-radius: 13px; background: #f3f1fa; font-size: 12px; font-weight: 700; color: #200093; line-height: 1.3; flex: none">12 months</span></div>
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px"><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span><span style="height: 34px; border-radius: 9px; background: #e6f4ec; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" fill="none" stroke="#1f8a5a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d='M5 12.500l4.500 4.500L19 7.500'></path></svg></span></div>
+<div style="display: flex; gap: 10px"><span style="flex: 1; height: 44px; border-radius: 12px; background: #f6f3ff; display: flex; align-items: center; gap: 10px; padding: 0 12px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #ffffff; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><span style="height: 7px; width: 60px; border-radius: 4px; background: #c4bce3"></span></span><span style="flex: 1; height: 44px; border-radius: 12px; background: #f6f3ff; display: flex; align-items: center; gap: 10px; padding: 0 12px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #ffffff; display: flex; align-items: center; justify-content: center; flex: none"><svg viewBox="0 0 24 24" fill="none" stroke="#200093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 14px; height: 14px"><path d="M17.500 19H9a7 7 0 1 1 6.710-9h1.790a4.500 4.500 0 1 1 0 9z"></path></svg></span><span style="height: 7px; width: 60px; border-radius: 4px; background: #c4bce3"></span></span></div>
+</div>
+<span style="position: absolute; left: 392px; top: 306px; width: 64px; height: 64px; border-radius: 50%; background: #200093; border: 5px solid #ffffff; box-sizing: border-box; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px rgba(10,0,61,.4)"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 28px; height: 28px"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"></path><path d="M8.500 12l2.500 2.500 4.500-5"></path></svg></span>
+</div>
+<div style="position: relative; max-width: 600px; display: flex; flex-direction: column">
+<h2 class="zl-h2" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 44px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; color: var(--White, #ffffff); text-wrap: balance">Ready to Keep Your Website Safe?</h2>
+<p style="font-size: 19px; line-height: 1.55; color: #f1ebff; margin-top: 20px; text-wrap: pretty">Let our experts look after your website, all year long.</p>
+<div style="margin-top: 36px">
+<a class="zl-btn-light" href="https://wa.me/8801814090134" style="display: inline-flex; align-items: center; gap: 10px; background: #ffffff; color: var(--Dark-Purple, #0a003d); font-size: 16px; font-weight: 600; padding: 16px 28px; border-radius: 12px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="color: inherit" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"></path><path transform="translate(6.72 6.72) scale(0.44)" fill="currentColor" stroke="none" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+Message Us on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer id="contact" style="position: relative; overflow: hidden; background: linear-gradient(180deg, #f3eeff 0%, #ebe2ff 55%, #e2d6ff 100%); flex: 1; display: flex; flex-direction: column">
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none">
+<svg viewBox="0 0 1440 260" preserveAspectRatio="none" fill="none" style="position: absolute; left: 0; bottom: 0; width: 100%; height: 240px"><path d="M0 120C240 40 480 40 720 110S1200 190 1440 90V260H0Z" fill="#7132ff" fill-opacity=".06"></path><path d="M0 170C300 110 600 120 900 170S1300 220 1440 160V260H0Z" fill="#7132ff" fill-opacity=".07"></path><path d="M0 215C360 175 720 205 1080 225S1340 235 1440 215V260H0Z" fill="#7132ff" fill-opacity=".08"></path></svg>
+<div style="position: absolute; left: -160px; top: 40px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(113,50,255,.18) 0%, rgba(113,50,255,0) 70%)"></div>
+<div style="position: absolute; right: -180px; bottom: -200px; width: 640px; height: 640px; border-radius: 50%; background: radial-gradient(circle, rgba(113,50,255,.22) 0%, rgba(113,50,255,0) 70%)"></div>
+</div>
+<div style="position: relative; width: 100%; max-width: 1280px; margin: 0 auto; padding: 72px 40px 0; box-sizing: border-box; flex: 1; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: 1.5fr 1fr 1.3fr 1.5fr; gap: 40px">
+
+<div>
+<a href="index.html" aria-label="Zentic Lab home" style="display: block; line-height: 0">
+<svg viewBox="398 872 1205 276" width="240" height="55" role="img" aria-label="Zentic Lab" style="display: block">
+<g fill="#7132ff">
+<path d="M812.04,993.26h98.18v25.79h-141.1v-25.79l89.13-76.04,7.31-5.58h-95.87v-25.8h138.6v25.8l-89.13,76.23-7.12,5.39Z"></path>
+<path d="M962.57,992.49v-26.76h95.48v-26.19h-95.48v-27.14h95.48v-26.56h-124.54v133.21h124.54v-26.57h-95.48Z"></path>
+<polygon points="1198.04 885.84 1227.1 885.84 1227.1 1044.67 1106.79 930.31 1106.79 1019.05 1077.91 1019.05 1077.91 860.17 1198.04 974.59 1198.04 885.84"></polygon>
+<path d="M1245.82,885.84v27.71h51.77v105.5h29.64v-105.5h54.48v-27.71h-135.89Z"></path>
+<path d="M1400.69,1019.05v-133.21h29.45v133.21h-29.45Z"></path>
+<path d="M1596.65,993.84h-73.99c-26.18,0-41.58-16.55-41.77-41.39v-.19c0-24.45,15.59-41.2,41.77-41.2h73.99v-26.95h-73.99c-44.47,0-71.03,26.95-71.03,68.15v.19c0,41.39,26.57,68.34,71.03,68.34h73.99v-26.95Z"></path>
+<path d="M726.97,879.61l-136.28,201.09h-50.41l117.89-165.44h-128.7c-41.77,0-75.63,33.86-75.63,75.63v44.07l-35.65,35.65v-85.17c0-58.45,47.38-105.83,105.83-105.83h202.96Z"></path>
+</g>
+<g fill="#200093">
+<path d="M781.09,1128.82v-85.39h-11.98v96.39h103.53l8.36-11.01h-99.92Z"></path>
+<path d="M1051.59,1139.82h-13.09l-18.39-24.38h-95.14l-18.39,24.38h-13.09l73.27-96.39h11.42l73.41,96.39ZM972.61,1053.19l-40.53,52.79h80.93l-40.39-52.79Z"></path>
+<path d="M1213.04,1113.92c0,17.69-12.26,25.91-34.96,25.91h-106.14v-96.39h100.85c23.12,0,34.96,7.8,34.96,24.79,0,12.81-6.69,19.64-19.78,22.01,15.88,1.53,25.07,8.36,25.07,23.68ZM1083.5,1052.91v33.15h89.15c15.88,0,23.54-5.02,23.54-16.58s-7.8-16.58-23.4-16.58h-89.29ZM1083.5,1130.35h94.58c15.74,0,23.4-5.29,23.4-17.55s-7.52-17.55-23.68-17.55h-94.3v35.1Z"></path>
+<path d="M403.35,1139.83l147.61-201.09h50.41l-124.63,165.44h124.11c41.77,0,75.63-33.86,75.63-75.63v-35.15l35.65-35.65v76.25c0,58.45-47.38,105.83-105.83,105.83h-202.96Z"></path>
+</g>
+</svg>
+</a>
+<p style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #200093; margin-top: 24px; max-width: 300px">Your Partner in Digital Growth</p>
+<div style="display: flex; align-items: center; gap: 12px; margin-top: 28px">
+<a class="zl-social" href="#" aria-label="Facebook" style="width: 40px; height: 40px; border-radius: 50%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background: #1877f2"><svg width="31" height="31" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M14 8h3V5h-3a4 4 0 0 0-4 4v2H7v3h3v7h3.2v-7h3l.6-3h-3.6V9.200c0-.7.3-1.200 1.100-1.200z"></path></svg></a>
+<a class="zl-social" href="#" aria-label="Instagram" style="width: 40px; height: 40px; border-radius: 50%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.500 6.500h.01" stroke-width="2.600"></path></svg></a>
+<a class="zl-social" href="#" aria-label="LinkedIn" style="width: 40px; height: 40px; border-radius: 50%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background: #0a66c2"><svg width="26" height="26" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><rect x="3.500" y="9" width="3.600" height="11"></rect><circle cx="5.300" cy="5.200" r="2.100"></circle><path d="M10 9h3.400v1.600c.5-.9 1.700-1.900 3.600-1.900 3.600 0 4.400 2.300 4.400 5.400V20h-3.600v-5.200c0-1.400-.1-2.900-1.800-2.900s-2.100 1.300-2.100 2.800V20H10z"></path></svg></a>
+</div>
+</div>
+
+<div>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 17px; font-weight: 700; color: var(--Dark-Purple, #0a003d)"><a class="zl-foot-link" href="services.html" style="color: var(--Dark-Purple, #0a003d)">Services</a></h3>
+<ul style="list-style: none; padding: 0; margin-top: 20px; display: flex; flex-direction: column; gap: 14px">
+<li><a class="zl-foot-link" href="ecommerce.html" style="font-size: 15.5px; color: #4a4565">E-Commerce Website</a></li>
+<li><a class="zl-foot-link" href="business.html" style="font-size: 15.5px; color: #4a4565">Business Website</a></li>
+</ul>
+</div>
+
+<div>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 17px; font-weight: 700; color: var(--Dark-Purple, #0a003d)"><a class="zl-foot-link" href="hosting-care.html" style="color: var(--Dark-Purple, #0a003d)">Hosting &amp; Care</a></h3>
+<ul style="list-style: none; padding: 0; margin-top: 20px; display: flex; flex-direction: column; gap: 14px">
+<li><a class="zl-foot-link" href="domain-hosting-plans.html" style="font-size: 15.5px; color: #4a4565">Domain &amp; Hosting Plans</a></li>
+<li><a class="zl-foot-link" href="content-update-plans.html" style="font-size: 15.5px; color: #4a4565">Content Update Plans</a></li>
+<li><a class="zl-foot-link" href="security-maintenance-plans.html" style="font-size: 15.5px; color: #4a4565">Security &amp; Maintenance Plans</a></li>
+</ul>
+</div>
+
+<div>
+<h3 style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 17px; font-weight: 700; color: var(--Dark-Purple, #0a003d)">Contact</h3>
+<ul style="list-style: none; padding: 0; margin-top: 20px; display: flex; flex-direction: column; gap: 18px">
+<li style="display: flex; align-items: center; gap: 14px">
+<span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex: none"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="0.500" y="0.500" width="23" height="23" rx="6.500" fill="#00c03b"></rect><path d="M7.730 15.870A6.600 6.600 0 1 1 11.480 17.740L6.300 19.300Z" fill="none" stroke="#ffffff" stroke-width="1.700" stroke-linejoin="round"></path><path transform="translate(7.600 6.400) scale(.4)" d="M22 16.920v3a2 2 0 0 1-2.180 2 19.790 19.790 0 0 1-8.630-3.070 19.500 19.500 0 0 1-6-6 19.790 19.790 0 0 1-3.070-8.670A2 2 0 0 1 4.110 2h3a2 2 0 0 1 2 1.720 12.840 12.840 0 0 0 .7 2.810 2 2 0 0 1-.45 2.110L8.090 9.910a16 16 0 0 0 6 6l1.270-1.270a2 2 0 0 1 2.110-.45 12.840 12.840 0 0 0 2.810.7A2 2 0 0 1 22 16.920z" fill="#ffffff"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #6b6485">WhatsApp</span>
+<a class="zl-foot-link" href="https://wa.me/8801814090134" style="font-size: 15.5px; color: #0a003d">+8801814090134</a>
+</div>
+</li>
+<li style="display: flex; align-items: center; gap: 14px">
+<span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex: none"><svg width="30" height="22.500" viewBox="0 0 24 18" fill="none" aria-hidden="true"><path d="M0 4.600L5.500 8.500V18H1.800A1.800 1.800 0 0 1 0 16.200Z" fill="#4285f4"></path><path d="M0 4.600V2.800A2.800 2.800 0 0 1 4.400.5L5.500 1.300V8.500Z" fill="#c5221f"></path><path d="M5.500 1.800L12 6.400 18.500 1.800V8.500L12 13.400 5.500 8.500Z" fill="#ea4335"></path><path d="M18.500 1.300L19.600.5A2.800 2.800 0 0 1 24 2.800V4.600L18.500 8.500Z" fill="#fbbc04"></path><path d="M24 4.600V16.200A1.800 1.800 0 0 1 22.200 18H18.500V8.500Z" fill="#34a853"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #6b6485">Email</span>
+<a class="zl-foot-link" href="mailto:zenticlab@gmail.com" style="font-size: 15.5px; color: #0a003d">zenticlab@gmail.com</a>
+</div>
+</li>
+<li style="display: flex; align-items: center; gap: 14px">
+<span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex: none"><svg width="21" height="29.800" viewBox="0 0 24 34" fill="none" aria-hidden="true"><defs><clipPath id="zlpin"><path d="M12 0C5.400 0 0 5.300 0 11.900c0 3.300 1.400 6.300 3.600 9L8.900 27.500C10 29 10.500 30.500 10.800 32 11 33.500 11.800 34 12 34s1-.5 1.200-2c.3-1.500.8-3 1.900-4.500L20.400 20.900C22.600 18.200 24 15.200 24 11.900 24 5.300 18.600 0 12 0Z"></path></clipPath></defs><g clip-path="url(#zlpin)"><rect x="-2" y="-2" width="28" height="38" fill="#34a853"></rect><path d="M-1 -1H15.500V0.400L8.500 8.800 2.600 4 5 -1Z" fill="#1a73e8"></path><path d="M15.500 -1H26V5.500L22.900 6.200 15.900 13.500 8.500 8.800 15.500 0.400Z" fill="#4285f4"></path><path d="M2.600 4L8.500 8.800 1.100 17.200 -1 17.200 -1 4Z" fill="#ea4335"></path><path d="M1.100 17.200L8.500 8.800 15.900 13.500 6.600 24.900H-1V17.200Z" fill="#fbbc04"></path></g><circle cx="12" cy="11.700" r="4.600" fill="#ffffff"></circle></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #6b6485">Address</span>
+<span style="font-size: 15.5px; color: #0a003d">Mirpur, Dhaka, Bangladesh</span>
+</div>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div style="margin-top: auto; padding-top: 64px">
+<div style="padding: 28px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; gap: 16px">
+<p style="font-size: 14.5px; color: #4a4565">© 2026 Zentic Lab. All rights reserved.</p>
+</div>
+</div>
+
+</div>
+</footer>
+
+</div>
+
+
+</body>
+</html>

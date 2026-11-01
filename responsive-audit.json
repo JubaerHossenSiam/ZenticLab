@@ -1,0 +1,2790 @@
+{
+  "date": "2026-11-01",
+  "pass": "tablet-columns-natural-card-flow-team-proportions",
+  "checks": [
+    {
+      "width": 320,
+      "route": "/",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [
+        0.000049591064453125,
+        0.000194549560546875
+      ],
+      "serviceCards": [
+        {
+          "width": 264.8000183105469,
+          "x": 20,
+          "y": 3123.375
+        },
+        {
+          "width": 264.8000183105469,
+          "x": 20,
+          "y": 3976.775146484375
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/services",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [
+        0.000011444091796875,
+        0.000049591064453125
+      ],
+      "serviceCards": [
+        {
+          "width": 264.8000183105469,
+          "x": 20,
+          "y": 897.9750366210938
+        },
+        {
+          "width": 264.8000183105469,
+          "x": 20,
+          "y": 1751.375
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/ecommerce",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/business",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/hosting-care",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.999900817871094,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.999900817871094,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.999900817871094,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.999977111816406,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.999900817871094,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/about",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 223.1999969482422,
+          "width": 264.8000183105469
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 223.1999969482422,
+          "width": 264.8000183105469
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 223.1999969482422,
+          "width": 264.8000183105469
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 320,
+      "route": "/contact",
+      "clipped": [],
+      "pageWidth": 305,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 305
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [
+        0.000049591064453125,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 2913.449951171875
+        },
+        {
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 3704.050048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/services",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [
+        0.000011444091796875,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 897.875
+        },
+        {
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 1688.4749755859375
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/ecommerce",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/business",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/hosting-care",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.999900817871094,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 12.000022888183594,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 11.999950408935549,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/about",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 390,
+      "route": "/contact",
+      "clipped": [],
+      "pageWidth": 375,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 375
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [
+        0.000049591064453125,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 324.3999938964844,
+          "x": 40,
+          "y": 2315.300048828125
+        },
+        {
+          "width": 324.3999938964844,
+          "x": 388.3999938964844,
+          "y": 2315.300048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/services",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [
+        0.000072479248046875,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 324.3999938964844,
+          "x": 40,
+          "y": 1074.0750732421875
+        },
+        {
+          "width": 324.3999938964844,
+          "x": 388.3999938964844,
+          "y": 1074.0750732421875
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/ecommerce",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/business",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/hosting-care",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 12.00019073486328,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/about",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 768,
+      "route": "/contact",
+      "clipped": [],
+      "pageWidth": 753,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 753
+    },
+    {
+      "width": 640,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [
+        0.0001468658447265625,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 584.7999877929688,
+          "x": 20,
+          "y": 2892.900146484375
+        },
+        {
+          "width": 584.7999877929688,
+          "x": 20,
+          "y": 3576.10009765625
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [
+        0.0000247955322265625,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 584.7999877929688,
+          "x": 20,
+          "y": 990.1000366210938
+        },
+        {
+          "width": 584.7999877929688,
+          "x": 20,
+          "y": 1673.300048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.999950408935549,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.999950408935549,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 11.999950408935549,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.999706268310549,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.999950408935549,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.999950408935549,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 11.999950408935549,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 12.000194549560549,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 640,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 625,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 625
+    },
+    {
+      "width": 641,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [
+        0.0000972747802734375,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 546.4000244140625,
+          "x": 40,
+          "y": 3041.85009765625
+        },
+        {
+          "width": 546.4000244140625,
+          "x": 40,
+          "y": 3733.050048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [
+        0.0000247955322265625,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 546.4000244140625,
+          "x": 40,
+          "y": 1065.4500732421875
+        },
+        {
+          "width": 546.4000244140625,
+          "x": 40,
+          "y": 1756.6500244140625
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.99960708618164,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 11.99960708618164,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 219.6000061035156,
+          "width": 261.20001220703125
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 219.6000061035156,
+          "width": 261.20001220703125
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 641,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 626,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 626
+    },
+    {
+      "width": 820,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [
+        0.000049591064453125,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 350.3999938964844,
+          "x": 40,
+          "y": 2321.550048828125
+        },
+        {
+          "width": 350.3999938964844,
+          "x": 414.3999938964844,
+          "y": 2321.550048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [
+        0.000072479248046875,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 350.3999938964844,
+          "x": 40,
+          "y": 1083.4500732421875
+        },
+        {
+          "width": 350.3999938964844,
+          "x": 414.3999938964844,
+          "y": 1083.4500732421875
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 258.3999938964844,
+          "width": 300
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 820,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 805,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 805
+    },
+    {
+      "width": 959,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [
+        0.0000972747802734375,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 420,
+          "x": 40,
+          "y": 2333.550048828125
+        },
+        {
+          "width": 420,
+          "x": 484,
+          "y": 2333.550048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [
+        0.0000247955322265625,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 420,
+          "x": 40,
+          "y": 1101.4500732421875
+        },
+        {
+          "width": 420,
+          "x": 484,
+          "y": 1101.4500732421875
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 230.40000915527344,
+          "width": 272
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 230.40000915527344,
+          "width": 272
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 230.40000915527344,
+          "width": 272
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 959,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 944,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 944
+    },
+    {
+      "width": 960,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [
+        0.0000972747802734375,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 420.3999938964844,
+          "x": 40,
+          "y": 2333.550048828125
+        },
+        {
+          "width": 420.3999938964844,
+          "x": 484.3999938964844,
+          "y": 2333.550048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [
+        0.0000247955322265625,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 420.3999938964844,
+          "x": 40,
+          "y": 1101.4500732421875
+        },
+        {
+          "width": 420.3999938964844,
+          "x": 484.3999938964844,
+          "y": 1101.4500732421875
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 11.99992561340332,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 230.6625061035156,
+          "width": 272.26251220703125
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 230.6625061035156,
+          "width": 272.26251220703125
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 230.6750030517578,
+          "width": 272.2749938964844
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 960,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 945,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 945
+    },
+    {
+      "width": 1000,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [
+        0.0000972747802734375,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 440.3999938964844,
+          "x": 40,
+          "y": 2333.550048828125
+        },
+        {
+          "width": 440.3999938964844,
+          "x": 504.3999938964844,
+          "y": 2333.550048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [
+        0.0000247955322265625,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 440.3999938964844,
+          "x": 40,
+          "y": 1101.4500732421875
+        },
+        {
+          "width": 440.3999938964844,
+          "x": 504.3999938964844,
+          "y": 1101.4500732421875
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 12.00019073486328,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "20px",
+          "photoWidth": 244,
+          "width": 285.6000061035156
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 244,
+          "width": 285.6000061035156
+        },
+        {
+          "padding": "20px",
+          "photoWidth": 244,
+          "width": 285.6000061035156
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1000,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 985,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 985
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [
+        0.0000972747802734375,
+        0.0000972747802734375
+      ],
+      "serviceCards": [
+        {
+          "width": 452.3999938964844,
+          "x": 40,
+          "y": 2652.25
+        },
+        {
+          "width": 452.3999938964844,
+          "x": 516.4000244140625,
+          "y": 2652.25
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [
+        0.0000247955322265625,
+        0.0000247955322265625
+      ],
+      "serviceCards": [
+        {
+          "width": 452.3999938964844,
+          "x": 40,
+          "y": 987.2000122070312
+        },
+        {
+          "width": 452.3999938964844,
+          "x": 516.4000244140625,
+          "y": 987.2000122070312
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 11.99997329711914,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "24px 24px 32px",
+          "photoWidth": 244,
+          "width": 293.6000061035156
+        },
+        {
+          "padding": "24px 24px 32px",
+          "photoWidth": 244,
+          "width": 293.6000061035156
+        },
+        {
+          "padding": "24px 24px 32px",
+          "photoWidth": 244,
+          "width": 293.6000061035156
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1024,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1009,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1009
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [
+        0,
+        0
+      ],
+      "serviceCards": [
+        {
+          "width": 588,
+          "x": 112.4000015258789,
+          "y": 1984.550048828125
+        },
+        {
+          "width": 588,
+          "x": 724.4000244140625,
+          "y": 1984.550048828125
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/services",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [
+        0,
+        0
+      ],
+      "serviceCards": [
+        {
+          "width": 588,
+          "x": 112.4000015258789,
+          "y": 844.5499877929688
+        },
+        {
+          "width": 588,
+          "x": 724.4000244140625,
+          "y": 844.5499877929688
+        }
+      ],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/ecommerce",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/business",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/hosting-care",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/domain-hosting-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/content-update-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Changes Can Break Your Website"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "You Have a Business to Run"
+        },
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Done by the People Who Built It"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Send Your Changes"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "We Make the Changes"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "Hours Reset Each Month"
+        }
+      ],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/security-maintenance-plans",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [
+        {
+          "gap": 12.00009536743164,
+          "minHeight": "0px",
+          "title": "Hacks and Downtime Cost You Customers"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "Old Software Opens the Door"
+        },
+        {
+          "gap": 12.00004768371582,
+          "minHeight": "0px",
+          "title": "Problems Stopped Early"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Choose a Plan"
+        },
+        {
+          "gap": 11.99994659423828,
+          "minHeight": "0px",
+          "title": "Start When You Want"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "We Look After It"
+        },
+        {
+          "gap": 11.99985122680664,
+          "minHeight": "0px",
+          "title": "Stop Any Time"
+        }
+      ],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/about",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [
+        {
+          "padding": "24px 24px 32px",
+          "photoWidth": 334.3999938964844,
+          "width": 384
+        },
+        {
+          "padding": "24px 24px 32px",
+          "photoWidth": 334.3999938964844,
+          "width": 384
+        },
+        {
+          "padding": "24px 24px 32px",
+          "photoWidth": 334.3999938964844,
+          "width": 384
+        }
+      ],
+      "titleSpacing": [],
+      "viewport": 1425
+    },
+    {
+      "width": 1440,
+      "route": "/contact",
+      "clipped": [],
+      "ctaOverlap": false,
+      "pageWidth": 1425,
+      "serviceAlignment": [],
+      "serviceCards": [],
+      "teamCards": [],
+      "titleSpacing": [],
+      "viewport": 1425
+    }
+  ],
+  "answerCards": [
+    {
+      "width": 320,
+      "index": 0,
+      "answerHeight": 259,
+      "answerScrollHeight": 259,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 320,
+      "index": 1,
+      "answerHeight": 310,
+      "answerScrollHeight": 310,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 320,
+      "index": 2,
+      "answerHeight": 387,
+      "answerScrollHeight": 387,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 320,
+      "index": 3,
+      "answerHeight": 310,
+      "answerScrollHeight": 310,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 320,
+      "index": 4,
+      "answerHeight": 248,
+      "answerScrollHeight": 248,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 320,
+      "index": 5,
+      "answerHeight": 412,
+      "answerScrollHeight": 412,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "index": 0,
+      "answerHeight": 248,
+      "answerScrollHeight": 248,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "index": 1,
+      "answerHeight": 259,
+      "answerScrollHeight": 259,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "index": 2,
+      "answerHeight": 310,
+      "answerScrollHeight": 310,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "index": 3,
+      "answerHeight": 248,
+      "answerScrollHeight": 248,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "index": 4,
+      "answerHeight": 248,
+      "answerScrollHeight": 248,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "index": 5,
+      "answerHeight": 321,
+      "answerScrollHeight": 321,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 820,
+      "index": 0,
+      "answerHeight": 238,
+      "answerScrollHeight": 238,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 820,
+      "index": 1,
+      "answerHeight": 291,
+      "answerScrollHeight": 291,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 820,
+      "index": 2,
+      "answerHeight": 317,
+      "answerScrollHeight": 317,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 820,
+      "index": 3,
+      "answerHeight": 248,
+      "answerScrollHeight": 248,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 820,
+      "index": 4,
+      "answerHeight": 185,
+      "answerScrollHeight": 185,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 820,
+      "index": 5,
+      "answerHeight": 327,
+      "answerScrollHeight": 327,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 1440,
+      "index": 0,
+      "answerHeight": 212,
+      "answerScrollHeight": 212,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 1440,
+      "index": 1,
+      "answerHeight": 238,
+      "answerScrollHeight": 238,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 1440,
+      "index": 2,
+      "answerHeight": 317,
+      "answerScrollHeight": 317,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 1440,
+      "index": 3,
+      "answerHeight": 248,
+      "answerScrollHeight": 248,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 1440,
+      "index": 4,
+      "answerHeight": 185,
+      "answerScrollHeight": 185,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    },
+    {
+      "width": 1440,
+      "index": 5,
+      "answerHeight": 300,
+      "answerScrollHeight": 300,
+      "checked": true,
+      "frontDisplay": "none",
+      "pageOverflow": false
+    }
+  ]
+}
