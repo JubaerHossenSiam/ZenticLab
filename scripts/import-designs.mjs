@@ -213,7 +213,7 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
       input = item.children("input"),
       head = item.children(".zl-fq-head");
     el.name = "details";
-    if (input.is("[checked]")) item.attr("open", "");
+    item.removeAttr("open");
     input.remove();
     head[0].name = "summary";
     head.find("label").each((_, label) => {
@@ -224,7 +224,9 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
   $(".zl-qa").each((_, el) => {
     const label = $(el).find("h3").first().text().trim();
     if (label) $(el).children("input").attr("aria-label", label);
+    $(el).children("input").removeAttr("checked");
   });
+  $("details").removeAttr("open");
   prepareResponsiveDesign($);
   const wrapper = $("body > div").first();
   if (slug === "index") {

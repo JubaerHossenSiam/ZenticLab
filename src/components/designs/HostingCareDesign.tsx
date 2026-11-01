@@ -2017,7 +2017,7 @@ export default function HostingCareDesign() {
               className: "zl-section-content",
             }}
           >
-            <details {...{ className: "zl-fq", open: true }}>
+            <details {...{ className: "zl-fq" }}>
               <summary {...{ className: "zl-fq-head" }}>
                 <h3
                   {...{

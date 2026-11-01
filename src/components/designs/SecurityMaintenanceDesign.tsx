@@ -1809,7 +1809,7 @@ export default function SecurityMaintenanceDesign() {
                 </a>
               </div>
             </div>
-            <div>
+            <div {...{ className: "zl-section-visual" }}>
               <svg
                 {...{
                   viewBox: "0 0 480 372",
@@ -2300,7 +2300,7 @@ export default function SecurityMaintenanceDesign() {
               className: "zl-section-content",
             }}
           >
-            <details {...{ className: "zl-fq", open: true }}>
+            <details {...{ className: "zl-fq" }}>
               <summary {...{ className: "zl-fq-head" }}>
                 <h3
                   {...{

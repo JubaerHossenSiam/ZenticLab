@@ -99,7 +99,7 @@ export default function ServicesDesign() {
             {...{
               style: { containerType: "inline-size", width: "100%" },
               "aria-hidden": "true",
-              className: "zl-hero-visual zl-mockup",
+              className: "zl-hero-visual zl-mockup zl-section-visual",
             }}
           >
             <div {...{ style: { position: "relative", width: "100%", aspectRatio: "1088 / 714" } }}>
@@ -1801,7 +1801,7 @@ export default function ServicesDesign() {
                 </a>
               </div>
             </div>
-            <div>
+            <div {...{ className: "zl-section-visual" }}>
               <div {...{ style: { containerType: "inline-size", width: "100%" }, "aria-hidden": "true" }}>
                 <div {...{ style: { position: "relative", width: "100%", aspectRatio: "1088 / 714" } }}>
                   <div
@@ -2868,7 +2868,7 @@ export default function ServicesDesign() {
               className: "zl-section-content",
             }}
           >
-            <details {...{ className: "zl-fq", open: true }}>
+            <details {...{ className: "zl-fq" }}>
               <summary {...{ className: "zl-fq-head" }}>
                 <h3
                   {...{

@@ -622,7 +622,7 @@ export default function AboutDesign() {
                 }
               </p>
             </div>
-            <div>
+            <div {...{ className: "zl-section-visual" }}>
               <svg
                 {...{
                   viewBox: "0 0 480 372",

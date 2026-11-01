@@ -92,7 +92,7 @@ export function prepareResponsiveDesign($) {
       "container-type": "inline-size",
       "max-width": `${width}px`,
     });
-    // Put the message before the illustration in both reading and mobile layout order.
+    // Keep the desktop copy first; CSS places the artwork first in stacked layouts.
     copy.insertBefore(art);
   }
   setStyle(cta[0], { padding: null });
@@ -209,6 +209,12 @@ export function prepareResponsiveDesign($) {
       .not(".zl-qa-back")
       .addClass("zl-qa-front");
     front.children("div").last().addClass("zl-qa-action");
+  });
+  // Identify illustration columns in other split sections as well as heroes/CTAs.
+  $(".zl-split-grid").each((_, grid) => {
+    $(grid).children("div").filter((_, el) =>
+      !$(el).find("h1, h2, h3, a").length && $(el).find("svg, img").length > 0,
+    ).addClass("zl-section-visual");
   });
   $('.zl-hero [style*="flex-wrap: wrap"]').addClass("zl-hero-actions");
 }

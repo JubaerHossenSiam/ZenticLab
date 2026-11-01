@@ -7,7 +7,7 @@ All ten pages were reviewed and corrected. Original HTML exports remain intact; 
 | Desktop section padding combined with additional mobile container padding | One source of vertical spacing per section; 56px section padding and 32px content spacing on phones |
 | Some headings retained desktop font sizes | All main headings participate in responsive typography, including service cards and CTA headings |
 | Hero mockups had minimum pixel font sizes inside a shrinking composition | Text, controls, borders, and SVG boxes scale proportionally with the artwork |
-| Absolutely positioned CTA illustrations overlapped text | Grid-based CTA layout with artwork below the message on narrow screens |
+| Absolutely positioned CTA illustrations overlapped text | Grid-based CTA layout with artwork above the message in stacked layouts |
 | Tiny grids inside illustrations inherited content layout rules | Artwork grids are isolated from responsive content grids |
 | Desktop-sized card padding and fixed description heights created awkward mobile spacing | Reduced card padding, responsive body copy, and natural description heights |
 | Split layouts and multi-column cards became cramped at intermediate widths | Tablet stacking and flexible card columns, with single-column phone layouts |
@@ -24,6 +24,9 @@ All ten pages were reviewed and corrected. Original HTML exports remain intact; 
 | Call-booking placeholders were converted into non-interactive spans | Buttons open a prefilled WhatsApp call request, without sending or booking automatically |
 
 ## Verification
+
+- Image-first follow-up: all 10 pages checked at 320, 440, 820, and 1440px widths. Heroes, CTAs, and illustrated split sections place their artwork above copy when stacked; no horizontal overflow was found.
+- All FAQs and homepage answer cards start collapsed. First-item open/close interaction passed on all eight pages containing FAQ accordions.
 
 - Latest pass: 110 browser viewport checks covering all 10 pages at 320, 390, 640, 641, 768, 820, 959, 960, 1000, 1024, and 1440px widths.
 - No horizontal page overflow or clipped headings, paragraphs, list items, or links in those checks. No CTA message/artwork overlap in the 80 checks that measured it during this pass.

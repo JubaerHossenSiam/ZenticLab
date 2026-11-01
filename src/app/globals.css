@@ -437,6 +437,9 @@ main .zl-fixed-height-title {
     padding: 56px 32px 64px !important;
     gap: 40px !important;
   }
+  .zl-hero-visual {
+    order: -1;
+  }
   main h1,
   main .zl-h1 {
     font-size: clamp(36px, 5vw, 46px) !important;
@@ -462,6 +465,10 @@ main .zl-fixed-height-title {
   }
 }
 @media (max-width: 900px) {
+  .zl-split-grid > .zl-section-visual,
+  .zl-cta-visual {
+    order: -1;
+  }
   .zl-split-grid {
     grid-template-columns: minmax(0, 1fr) !important;
     gap: 32px !important;

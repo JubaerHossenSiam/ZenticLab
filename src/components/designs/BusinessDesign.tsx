@@ -3822,7 +3822,7 @@ export default function BusinessDesign() {
                 </a>
               </div>
             </div>
-            <div>
+            <div {...{ className: "zl-section-visual" }}>
               <div {...{ style: { containerType: "inline-size", width: "100%" }, "aria-hidden": "true" }}>
                 <div {...{ style: { position: "relative", width: "100%", aspectRatio: "1088 / 714" } }}>
                   <div
@@ -4591,7 +4591,7 @@ export default function BusinessDesign() {
               className: "zl-section-content",
             }}
           >
-            <details {...{ className: "zl-fq", open: true }}>
+            <details {...{ className: "zl-fq" }}>
               <summary {...{ className: "zl-fq-head" }}>
                 <h3
                   {...{
