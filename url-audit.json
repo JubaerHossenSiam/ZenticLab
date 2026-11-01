@@ -130,7 +130,7 @@
     "/services?tab=ecommerce": "/services/ecommerce",
     "/services?tab=business": "/services/business"
   },
-  "legacyHtml": "Existing index.html, services.html, about.html and contact.html paths serve directly through internal rewrites, preserving query strings.",
+  "legacyHtml": "Static export includes matching HTML files. Cloudflare Pages serves clean URLs and canonicalizes .html requests using its built-in routing; no Next.js server rewrites are required.",
   "booking": "https://calendly.com/zenticlab/30min",
   "packageRouting": "Dedicated nested pages; /services always renders the services overview. Old tab-query routing is removed."
 }

@@ -14,8 +14,8 @@ npm run dev
 Open http://localhost:3000. The development server binds to the local computer only.
 
 ```sh
-npm run build      # Production build and TypeScript validation
-npm start          # Serve the production build
+npm run build      # Static export to out/ and TypeScript validation
+npx serve out      # Preview the exported site locally
 npm run typecheck  # TypeScript validation
 ```
 
@@ -23,7 +23,20 @@ npm run typecheck  # TypeScript validation
 
 `/`, `/services`, `/services/ecommerce`, `/services/business`, `/hosting-care`, `/domain-hosting-plans`, `/content-update-plans`, `/security-maintenance-plans`, `/about`, and `/contact`.
 
-The existing site's shared slugs (`/`, `/services`, `/about`, and `/contact`) are preserved. Legacy `.html` URLs serve the same pages through internal rewrites, without redirects. E-commerce and business packages now have dedicated pages under `/services/ecommerce` and `/services/business`. The published URL inventory is recorded in `url-audit.json`.
+The existing site's shared slugs (`/`, `/services`, `/about`, and `/contact`) are preserved. The static export includes corresponding `.html` files; Cloudflare Pages serves clean URLs from those files and may canonicalize requests for `.html` URLs. E-commerce and business packages have dedicated pages under `/services/ecommerce` and `/services/business`. The published URL inventory is recorded in `url-audit.json`.
+
+## Cloudflare Pages
+
+The site uses `output: "export"` and needs no Next.js server or runtime adapter. Next.js server rewrites are not used.
+
+- Project: `zenticlab`
+- Production branch: `main`
+- Framework preset: Next.js (Static HTML Export)
+- Build command: `npm run build` (or `npx next build`)
+- Build output directory: `out`
+- Root directory: repository root
+
+Deploy the generated `out/` directory. It includes all ten pages, nested service pages, a custom `404.html`, favicon files, images, and client-side JavaScript. No environment variables are required. Use `npm run dev` during development; `next start` is not used for a static export.
 
 ## Editing
 
