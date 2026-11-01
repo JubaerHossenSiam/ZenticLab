@@ -1,0 +1,157 @@
+{
+  "source": "https://zenticlab.com",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "final": "https://zenticlab.com/",
+      "title": "Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/",
+      "links": [
+        "/contact",
+        "/services?tab=ecommerce",
+        "/services?tab=business"
+      ]
+    },
+    {
+      "path": "/services.html",
+      "status": 200,
+      "final": "https://zenticlab.com/services.html",
+      "title": "Packages & Pricing | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/services",
+      "links": [
+        "/contact"
+      ]
+    },
+    {
+      "path": "/about.html",
+      "status": 200,
+      "final": "https://zenticlab.com/about.html",
+      "title": "About Us | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/about.html",
+      "links": []
+    },
+    {
+      "path": "/contact.html",
+      "status": 200,
+      "final": "https://zenticlab.com/contact.html",
+      "title": "Contact Us | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/contact.html",
+      "links": [
+        "https://wa.me/8801814090134",
+        "mailto:zenticlab@gmail.com",
+        ""
+      ]
+    },
+    {
+      "path": "/components/header.html",
+      "status": 200,
+      "final": "https://zenticlab.com/components/header.html",
+      "title": "",
+      "links": [
+        "/",
+        "/services",
+        "/about",
+        "/contact"
+      ]
+    },
+    {
+      "path": "/components/footer.html",
+      "status": 200,
+      "final": "https://zenticlab.com/components/footer.html",
+      "title": "",
+      "links": [
+        "/contact",
+        "/",
+        "/services",
+        "/about",
+        "mailto:zenticlab@gmail.com",
+        "tel:+8801814090134",
+        "https://www.facebook.com/ZenticLab",
+        "https://www.instagram.com/zenticlab?igsh=YjQyajd3djZobms2"
+      ]
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "final": "https://zenticlab.com/contact",
+      "title": "Contact Us | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/contact.html",
+      "links": [
+        "https://wa.me/8801814090134",
+        "mailto:zenticlab@gmail.com",
+        ""
+      ]
+    },
+    {
+      "path": "/services?tab=ecommerce",
+      "status": 200,
+      "final": "https://zenticlab.com/services?tab=ecommerce",
+      "title": "Packages & Pricing | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/services",
+      "links": [
+        "/contact"
+      ]
+    },
+    {
+      "path": "/services?tab=business",
+      "status": 200,
+      "final": "https://zenticlab.com/services?tab=business",
+      "title": "Packages & Pricing | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/services",
+      "links": [
+        "/contact"
+      ]
+    },
+    {
+      "path": "/services",
+      "status": 200,
+      "final": "https://zenticlab.com/services",
+      "title": "Packages & Pricing | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/services",
+      "links": [
+        "/contact"
+      ]
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "final": "https://zenticlab.com/about",
+      "title": "About Us | Zentic Lab — Your Partner in Digital Growth",
+      "canonical": "https://zenticlab.com/about.html",
+      "links": []
+    }
+  ],
+  "mapping": {
+    "/": "/",
+    "/services": "/services",
+    "/about": "/about",
+    "/contact": "/contact",
+    "/services?tab=ecommerce": "/services?tab=ecommerce",
+    "/services?tab=business": "/services?tab=business"
+  },
+  "legacyHtml": "Existing index.html, services.html, about.html and contact.html paths serve directly through internal rewrites, preserving query strings.",
+  "verification": [
+    {
+      "path": "/services?tab=ecommerce",
+      "status": 200,
+      "correctPage": true
+    },
+    {
+      "path": "/services.html?tab=ecommerce",
+      "status": 200,
+      "correctPage": true
+    },
+    {
+      "path": "/services?tab=business",
+      "status": 200,
+      "correctPage": true
+    },
+    {
+      "path": "/services.html?tab=business",
+      "status": 200,
+      "correctPage": true
+    }
+  ],
+  "booking": "https://calendly.com/zenticlab/30min"
+}

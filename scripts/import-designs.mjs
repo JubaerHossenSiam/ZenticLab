@@ -133,7 +133,13 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
     const value = $(el).attr("href");
     $(el).attr(
       "href",
-      value === "index.html" ? "/" : "/" + value.replace(".html", ""),
+      value === "index.html"
+        ? "/"
+        : value === "ecommerce.html"
+          ? "/services?tab=ecommerce"
+          : value === "business.html"
+            ? "/services?tab=business"
+            : "/" + value.replace(".html", ""),
     );
   });
   $('a[href="https://wa.me/8801814090134"]')
@@ -144,10 +150,7 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
       $(el)
         .attr(
           "href",
-          "https://wa.me/8801814090134?text=" +
-            encodeURIComponent(
-              "Hi Zentic Lab, I'd like to book a free project call.",
-            ),
+          "https://calendly.com/zenticlab/30min",
         )
         .attr("target", "_blank")
         .attr("rel", "noopener noreferrer");
@@ -255,7 +258,7 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
       : path.join(root, "src/app", slug);
   await writeTsx(
     path.join(route, "page.tsx"),
-    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\nexport const metadata: Metadata = {title:${JSON.stringify(title)},description:${JSON.stringify(description)}};\nexport default function Page(){return <${name} />;}`,
+    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\n${slug === "services" ? "import EcommerceDesign from '@/components/designs/EcommerceDesign';\nimport BusinessDesign from '@/components/designs/BusinessDesign';\n" : ""}export const metadata: Metadata = {title:${JSON.stringify(title)},description:${JSON.stringify(description)}};\n${slug === "services" ? `export default async function Page({searchParams}: {searchParams: Promise<{tab?: string | string[]}>}) {const {tab} = await searchParams; if(tab === 'ecommerce') return <EcommerceDesign />; if(tab === 'business') return <BusinessDesign />; return <ServicesDesign />;}` : `export default function Page(){return <${name} />;}`}`,
   );
   console.log("Imported /" + (slug === "index" ? "" : slug));
 }

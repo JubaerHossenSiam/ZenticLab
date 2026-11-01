@@ -12,13 +12,13 @@ const groups = [
     items: [
       {
         label: "E-Commerce Website",
-        href: "/ecommerce",
+        href: "/services?tab=ecommerce",
         description: "Sell your products online",
         icon: "cart",
       },
       {
         label: "Business Website",
-        href: "/business",
+        href: "/services?tab=business",
         description: "Show your business and get more leads",
         icon: "business",
       },

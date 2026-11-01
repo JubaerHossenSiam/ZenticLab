@@ -2,10 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  async redirects() {
+  async rewrites() {
     return [
-      { source: "/index.html", destination: "/", permanent: true },
-      { source: "/:page.html", destination: "/:page", permanent: true },
+      { source: "/index.html", destination: "/" },
+      { source: "/:page.html", destination: "/:page" },
     ];
   },
 };

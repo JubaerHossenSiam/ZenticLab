@@ -23,7 +23,7 @@ npm run typecheck  # TypeScript validation
 
 `/`, `/services`, `/ecommerce`, `/business`, `/hosting-care`, `/domain-hosting-plans`, `/content-update-plans`, `/security-maintenance-plans`, `/about`, and `/contact`.
 
-The original `.html` URLs redirect to their corresponding clean URLs.
+The existing site's shared slugs (`/`, `/services`, `/about`, and `/contact`) are preserved. Legacy `.html` URLs serve the same pages through internal rewrites, without redirects. Existing `/services?tab=ecommerce` and `/services?tab=business` links render the relevant package pages directly. The published URL inventory is recorded in `url-audit.json`.
 
 ## Editing
 
@@ -44,6 +44,6 @@ Four product image references in the original exports pointed to unavailable `/_
 
 Contact buttons open the WhatsApp number and email supplied in the designs. No messages are sent automatically. The supplied designs did not include a contact form or social profile URLs. Social artwork is displayed without dead links; real profile links can be added to the footer when available.
 
-The original placeholder “Book a Free Project Call” buttons now open WhatsApp with a draft call request. Visitors choose whether to send it; this does not automatically book an appointment.
+“Book a Free Project Call” buttons open https://calendly.com/zenticlab/30min in a new tab so visitors can choose an appointment time.
 
 No database, email service, authentication, or deployment credentials are needed to run this site.

@@ -326,7 +326,7 @@ export default function Footer() {
                 <Link
                   {...{
                     className: "zl-foot-link",
-                    href: "/ecommerce",
+                    href: "/services?tab=ecommerce",
                     style: { fontSize: "15.5px", color: "#4a4565" },
                   }}
                 >
@@ -337,7 +337,7 @@ export default function Footer() {
                 <Link
                   {...{
                     className: "zl-foot-link",
-                    href: "/business",
+                    href: "/services?tab=business",
                     style: { fontSize: "15.5px", color: "#4a4565" },
                   }}
                 >

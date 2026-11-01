@@ -1192,7 +1192,7 @@ export default function ServicesDesign() {
                 <Link
                   {...{
                     className: "zl-btn-outline",
-                    href: "/ecommerce",
+                    href: "/services?tab=ecommerce",
                     style: {
                       display: "flex",
                       width: "fit-content",
@@ -1661,7 +1661,7 @@ export default function ServicesDesign() {
                 <Link
                   {...{
                     className: "zl-btn-outline",
-                    href: "/business",
+                    href: "/services?tab=business",
                     style: {
                       display: "flex",
                       width: "fit-content",

@@ -361,7 +361,7 @@ export default function ContactDesign() {
                 <a
                   {...{
                     className: "zl-btn-outline",
-                    href: "https://wa.me/8801814090134?text=Hi%20Zentic%20Lab%2C%20I'd%20like%20to%20book%20a%20free%20project%20call.",
+                    href: "https://calendly.com/zenticlab/30min",
                     style: {
                       display: "flex",
                       alignItems: "center",
@@ -1498,7 +1498,7 @@ export default function ContactDesign() {
                 <a
                   {...{
                     className: "zl-cta-link",
-                    href: "https://wa.me/8801814090134?text=Hi%20Zentic%20Lab%2C%20I'd%20like%20to%20book%20a%20free%20project%20call.",
+                    href: "https://calendly.com/zenticlab/30min",
                     style: {
                       display: "inline-flex",
                       alignItems: "center",
