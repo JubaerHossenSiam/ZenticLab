@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   description:
     "Professional e-commerce and business websites, hosting, and website care in Bangladesh.",
   applicationName: "Zentic Lab",
-  icons: { icon: "/icon.svg" },
+  icons: {
+    icon: { url: "/icon.svg?v=2", type: "image/svg+xml", sizes: "any" },
+  },
 };
 
 export default function RootLayout({
