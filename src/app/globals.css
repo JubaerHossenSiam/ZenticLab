@@ -178,6 +178,7 @@ summary:focus-visible {
   outline-offset: 6px;
 }
 .zl-qa-back {
+  flex: 1;
   visibility: hidden;
   position: relative;
   inset: auto;
@@ -194,6 +195,8 @@ summary:focus-visible {
   display: none !important;
 }
 .zl-qa {
+  display: flex;
+  flex-direction: column;
   min-height: 0 !important;
 }
 .zl-qa-t:focus-visible ~ .zl-qa-back .zl-qa-close {
@@ -207,6 +210,7 @@ main .zl-fixed-height-title {
   min-height: 0 !important;
 }
 .zl-qa-front {
+  flex: 1;
   height: auto !important;
 }
 .zl-qa-action {
@@ -511,6 +515,8 @@ main .zl-fixed-height-title {
   }
   .zl-content-grid {
     grid-template-columns: minmax(0, 1fr) !important;
+    grid-auto-rows: auto !important;
+    align-items: start !important;
     gap: 24px !important;
   }
   .zl-content-grid.zl-icon-grid {
@@ -520,6 +526,8 @@ main .zl-fixed-height-title {
     margin-top: 32px !important;
   }
   .zl-card-panel {
+    height: auto !important;
+    min-height: 0 !important;
     padding: 24px !important;
     border-radius: 20px !important;
   }
@@ -589,7 +597,7 @@ main .zl-fixed-height-title {
   }
   .zl-qa-front {
     padding: 24px !important;
-    min-height: 248px;
+    min-height: 0;
   }
   .zl-qa-btn {
     display: inline-flex;
@@ -597,13 +605,23 @@ main .zl-fixed-height-title {
     min-height: 44px;
   }
   .zl-qa-close {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     top: 12px;
     right: 12px;
   }
+  .zl-qa-close::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+  }
+  .zl-qa-close svg {
+    width: 14px;
+    height: 14px;
+  }
   .zl-qa-back {
-    min-height: 248px;
+    min-height: 0;
+    padding-top: 48px !important;
   }
   .zl-qa-back p {
     font-size: 16px !important;
