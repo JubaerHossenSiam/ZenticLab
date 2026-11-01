@@ -2725,7 +2725,7 @@ export default function HomeDesign() {
                 <Link
                   {...{
                     className: "zl-btn-outline",
-                    href: "/services?tab=ecommerce",
+                    href: "/services/ecommerce",
                     style: {
                       display: "flex",
                       width: "fit-content",
@@ -3194,7 +3194,7 @@ export default function HomeDesign() {
                 <Link
                   {...{
                     className: "zl-btn-outline",
-                    href: "/services?tab=business",
+                    href: "/services/business",
                     style: {
                       display: "flex",
                       width: "fit-content",

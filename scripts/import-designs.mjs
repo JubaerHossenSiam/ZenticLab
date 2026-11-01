@@ -136,9 +136,9 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
       value === "index.html"
         ? "/"
         : value === "ecommerce.html"
-          ? "/services?tab=ecommerce"
+          ? "/services/ecommerce"
           : value === "business.html"
-            ? "/services?tab=business"
+            ? "/services/business"
             : "/" + value.replace(".html", ""),
     );
   });
@@ -255,12 +255,12 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
   const route =
     slug === "index"
       ? path.join(root, "src/app")
-      : path.join(root, "src/app", slug);
+      : path.join(root, "src/app", ...(["ecommerce", "business"].includes(slug) ? ["services", slug] : [slug]));
   await writeTsx(
     path.join(route, "page.tsx"),
-    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\n${slug === "services" ? "import EcommerceDesign from '@/components/designs/EcommerceDesign';\nimport BusinessDesign from '@/components/designs/BusinessDesign';\n" : ""}export const metadata: Metadata = {title:${JSON.stringify(title)},description:${JSON.stringify(description)}};\n${slug === "services" ? `export default async function Page({searchParams}: {searchParams: Promise<{tab?: string | string[]}>}) {const {tab} = await searchParams; if(tab === 'ecommerce') return <EcommerceDesign />; if(tab === 'business') return <BusinessDesign />; return <ServicesDesign />;}` : `export default function Page(){return <${name} />;}`}`,
+    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\nexport const metadata: Metadata = {title:${JSON.stringify(title)},description:${JSON.stringify(description)}};\nexport default function Page(){return <${name} />;}`,
   );
-  console.log("Imported /" + (slug === "index" ? "" : slug));
+  console.log("Imported /" + path.relative(path.join(root, "src/app"), route).split(path.sep).join("/"));
 }
 await fs.writeFile(
   path.join(root, "src/app/designs.css"),

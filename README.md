@@ -21,9 +21,9 @@ npm run typecheck  # TypeScript validation
 
 ## Pages
 
-`/`, `/services`, `/ecommerce`, `/business`, `/hosting-care`, `/domain-hosting-plans`, `/content-update-plans`, `/security-maintenance-plans`, `/about`, and `/contact`.
+`/`, `/services`, `/services/ecommerce`, `/services/business`, `/hosting-care`, `/domain-hosting-plans`, `/content-update-plans`, `/security-maintenance-plans`, `/about`, and `/contact`.
 
-The existing site's shared slugs (`/`, `/services`, `/about`, and `/contact`) are preserved. Legacy `.html` URLs serve the same pages through internal rewrites, without redirects. Existing `/services?tab=ecommerce` and `/services?tab=business` links render the relevant package pages directly. The published URL inventory is recorded in `url-audit.json`.
+The existing site's shared slugs (`/`, `/services`, `/about`, and `/contact`) are preserved. Legacy `.html` URLs serve the same pages through internal rewrites, without redirects. E-commerce and business packages now have dedicated pages under `/services/ecommerce` and `/services/business`. The published URL inventory is recorded in `url-audit.json`.
 
 ## Editing
 

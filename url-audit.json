@@ -127,31 +127,10 @@
     "/services": "/services",
     "/about": "/about",
     "/contact": "/contact",
-    "/services?tab=ecommerce": "/services?tab=ecommerce",
-    "/services?tab=business": "/services?tab=business"
+    "/services?tab=ecommerce": "/services/ecommerce",
+    "/services?tab=business": "/services/business"
   },
   "legacyHtml": "Existing index.html, services.html, about.html and contact.html paths serve directly through internal rewrites, preserving query strings.",
-  "verification": [
-    {
-      "path": "/services?tab=ecommerce",
-      "status": 200,
-      "correctPage": true
-    },
-    {
-      "path": "/services.html?tab=ecommerce",
-      "status": 200,
-      "correctPage": true
-    },
-    {
-      "path": "/services?tab=business",
-      "status": 200,
-      "correctPage": true
-    },
-    {
-      "path": "/services.html?tab=business",
-      "status": 200,
-      "correctPage": true
-    }
-  ],
-  "booking": "https://calendly.com/zenticlab/30min"
+  "booking": "https://calendly.com/zenticlab/30min",
+  "packageRouting": "Dedicated nested pages; /services always renders the services overview. Old tab-query routing is removed."
 }
