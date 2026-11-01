@@ -53,7 +53,7 @@ The original HTML designs are preserved. `npm run import-designs` regenerates pa
 
 ## Assets and contact links
 
-Four product image references in the original exports pointed to unavailable `/_blob/` assets. Replacement product photos are stored locally; their Unsplash source URLs are recorded in `scripts/fetch-product-images.mjs`. Existing embedded team photos and artwork are preserved. The original Google Fonts stylesheet loads Inter and Plus Jakarta Sans, with system-font fallbacks.
+The four original product photos supplied by the owner are stored unchanged as `public/images/t-shirt.webp`, `shoes.webp`, `headphones.webp`, and `bag.webp`. The importer maps the HTML exports' `/_blob/` references to these local files across hero and CTA illustrations. Existing embedded team photos and artwork are preserved. The original Google Fonts stylesheet loads Inter and Plus Jakarta Sans, with system-font fallbacks.
 
 Contact buttons open the WhatsApp number and email supplied in the designs. No messages are sent automatically. The supplied designs did not include a contact form or social profile URLs. Social artwork is displayed without dead links; real profile links can be added to the footer when available.
 

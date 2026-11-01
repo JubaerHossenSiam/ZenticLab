@@ -65,10 +65,10 @@ const pages = {
   ],
 };
 const blobs = {
-  "/_blob/337c5d55f8af640c708e85793ce390fb": "/images/t-shirt.jpg",
-  "/_blob/96e9917786567d6a55f151918b6bcdc7": "/images/shoes.jpg",
-  "/_blob/4e94989387f9aa39cd748549f204dde9": "/images/headphones.jpg",
-  "/_blob/0a215d6b296086127d1678a07c9aabb0": "/images/bag.jpg",
+  "/_blob/337c5d55f8af640c708e85793ce390fb": "/images/t-shirt.webp",
+  "/_blob/96e9917786567d6a55f151918b6bcdc7": "/images/shoes.webp",
+  "/_blob/4e94989387f9aa39cd748549f204dde9": "/images/headphones.webp",
+  "/_blob/0a215d6b296086127d1678a07c9aabb0": "/images/bag.webp",
 };
 const voids = new Set([
   "area",

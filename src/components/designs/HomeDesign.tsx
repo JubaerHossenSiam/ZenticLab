@@ -468,7 +468,7 @@ export default function HomeDesign() {
                   <div {...{ style: { display: "flex", flexDirection: "column" } }}>
                     <img
                       {...{
-                        src: "/images/t-shirt.jpg",
+                        src: "/images/t-shirt.webp",
                         alt: "T-Shirt",
                         style: {
                           display: "block",
@@ -542,7 +542,7 @@ export default function HomeDesign() {
                     >
                       <img
                         {...{
-                          src: "/images/shoes.jpg",
+                          src: "/images/shoes.webp",
                           alt: "Shoes",
                           style: {
                             display: "block",
@@ -605,7 +605,7 @@ export default function HomeDesign() {
                   <div {...{ style: { display: "flex", flexDirection: "column" } }}>
                     <img
                       {...{
-                        src: "/images/headphones.jpg",
+                        src: "/images/headphones.webp",
                         alt: "Headphones",
                         style: {
                           display: "block",
@@ -958,7 +958,7 @@ export default function HomeDesign() {
                 >
                   <img
                     {...{
-                      src: "/images/bag.jpg",
+                      src: "/images/bag.webp",
                       alt: "Bag",
                       style: {
                         display: "block",
@@ -4188,7 +4188,7 @@ export default function HomeDesign() {
                   >
                     <img
                       {...{
-                        src: "/images/bag.jpg",
+                        src: "/images/bag.webp",
                         alt: "Bag",
                         style: {
                           display: "block",
