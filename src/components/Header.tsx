@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Logo from "./designs/Logo";
 
 const groups = [
@@ -100,9 +100,42 @@ function Icon({ name }: { name: string }) {
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const close = () => setOpen(false);
+  const [expandedGroup, setExpandedGroup] = useState<string | null>(null);
+  const headerRef = useRef<HTMLElement>(null);
+  const close = () => {
+    setOpen(false);
+    setExpandedGroup(null);
+  };
+  useEffect(() => {
+    if (!expandedGroup) return;
+    const dismiss = (event: PointerEvent) => {
+      if (!headerRef.current?.contains(event.target as Node))
+        setExpandedGroup(null);
+    };
+    document.addEventListener("pointerdown", dismiss);
+    return () => document.removeEventListener("pointerdown", dismiss);
+  }, [expandedGroup]);
   return (
-    <header className={`site-header${open ? " menu-open" : ""}`}>
+    <header
+      ref={headerRef}
+      className={`site-header${open ? " menu-open" : ""}`}
+      onKeyDown={(event) => {
+        if (event.key !== "Escape") return;
+        if (expandedGroup) {
+          headerRef.current
+            ?.querySelector<HTMLButtonElement>(
+              '.dropdown-toggle[aria-expanded="true"]',
+            )
+            ?.focus();
+          setExpandedGroup(null);
+        } else if (open) {
+          close();
+          headerRef.current
+            ?.querySelector<HTMLButtonElement>(".menu-toggle")
+            ?.focus();
+        }
+      }}
+    >
       <div className="header-inner">
         <Link
           href="/"
@@ -118,7 +151,10 @@ export default function Header() {
           aria-label={open ? "Close navigation" : "Open navigation"}
           aria-expanded={open}
           aria-controls="main-navigation"
-          onClick={() => setOpen(!open)}
+          onClick={() => {
+            setExpandedGroup(null);
+            setOpen(!open);
+          }}
         >
           <svg
             width="24"
@@ -137,44 +173,56 @@ export default function Header() {
             )}
           </svg>
         </button>
-        <nav
-          id="main-navigation"
-          aria-label="Main"
-          onKeyDown={(event) => {
-            if (event.key === "Escape") {
-              close();
-              document
-                .querySelector<HTMLButtonElement>(".menu-toggle")
-                ?.focus();
-            }
-          }}
-        >
+        <nav id="main-navigation" aria-label="Main">
           {groups.map((group) => (
             <div className="zl-dd" key={group.href}>
-              <Link
-                href={group.href}
-                className="zl-nav"
-                aria-current={pathname === group.href ? "page" : undefined}
-                data-active={
-                  pathname === group.href ||
-                  group.items.some((item) => item.href === pathname)
-                    ? "true"
-                    : undefined
-                }
-                onClick={close}
-              >
-                {group.label}
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
+              <div className="nav-group-heading">
+                <Link
+                  href={group.href}
+                  className="zl-nav"
+                  aria-current={pathname === group.href ? "page" : undefined}
+                  data-active={
+                    pathname === group.href ||
+                    group.items.some((item) => item.href === pathname)
+                      ? "true"
+                      : undefined
+                  }
+                  onClick={close}
                 >
-                  <path d="M5 8h14l-7 9z" />
-                </svg>
-              </Link>
-              <div className="zl-dd-menu">
+                  {group.label}
+                </Link>
+                <button
+                  type="button"
+                  className="dropdown-toggle"
+                  aria-label={`${group.label} submenu`}
+                  aria-expanded={expandedGroup === group.label}
+                  aria-controls={`submenu-${group.href.slice(1)}`}
+                  onClick={() =>
+                    setExpandedGroup(
+                      expandedGroup === group.label ? null : group.label,
+                    )
+                  }
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div
+                className="zl-dd-menu"
+                id={`submenu-${group.href.slice(1)}`}
+                hidden={expandedGroup !== group.label}
+              >
                 <div className="dropdown-inner">
                   {group.items.map((item) => (
                     <Link
