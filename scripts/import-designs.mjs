@@ -70,6 +70,10 @@ const blobs = {
   "/_blob/4e94989387f9aa39cd748549f204dde9": "/images/headphones.webp",
   "/_blob/0a215d6b296086127d1678a07c9aabb0": "/images/bag.webp",
 };
+const socialProfiles = new Map([
+  ["Facebook", "https://www.facebook.com/ZenticLab"],
+  ["Instagram", "https://www.instagram.com/zenticlab"],
+]);
 const voids = new Set([
   "area",
   "base",
@@ -156,7 +160,15 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
         .attr("rel", "noopener noreferrer");
       return;
     }
-    // The exports contain no social profile URLs. Keep their artwork without a dead anchor.
+    const profile = socialProfiles.get($(el).attr("aria-label"));
+    if (profile) {
+      $(el)
+        .attr("href", profile)
+        .attr("target", "_blank")
+        .attr("rel", "noopener noreferrer");
+      return;
+    }
+    // Keep artwork for social profiles without a URL.
     el.name = "span";
     $(el)
       .removeAttr("href")

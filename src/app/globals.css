@@ -82,6 +82,9 @@ section {
 .site-header [aria-current="page"],
 .site-header [data-active="true"] {
   color: #200093;
+}
+.site-header [aria-current="page"],
+.site-header [data-active="true"] {
   font-weight: 600;
 }
 .nav-group-heading {

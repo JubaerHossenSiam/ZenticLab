@@ -55,7 +55,7 @@ The original HTML designs are preserved. `npm run import-designs` regenerates pa
 
 The four original product photos supplied by the owner are stored unchanged as `public/images/t-shirt.webp`, `shoes.webp`, `headphones.webp`, and `bag.webp`. The importer maps the HTML exports' `/_blob/` references to these local files across hero and CTA illustrations. Existing embedded team photos and artwork are preserved. The original Google Fonts stylesheet loads Inter and Plus Jakarta Sans, with system-font fallbacks.
 
-Contact buttons open the WhatsApp number and email supplied in the designs. No messages are sent automatically. The supplied designs did not include a contact form or social profile URLs. Social artwork is displayed without dead links; real profile links can be added to the footer when available.
+Contact buttons open the WhatsApp number and email supplied in the designs. The footer links to Zentic Lab's Facebook and Instagram profiles.
 
 “Book a Free Project Call” buttons open https://calendly.com/zenticlab/30min in a new tab so visitors can choose an appointment time.
 

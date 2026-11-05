@@ -179,9 +179,10 @@ export default function Footer() {
               {"Your Partner in Digital Growth"}
             </p>
             <div {...{ style: { display: "flex", alignItems: "center", gap: "12px", marginTop: "28px" } }}>
-              <span
+              <a
                 {...{
                   className: "zl-social",
+                  href: "https://www.facebook.com/ZenticLab",
                   "aria-label": "Facebook",
                   style: {
                     width: "40px",
@@ -193,8 +194,8 @@ export default function Footer() {
                     justifyContent: "center",
                     background: "#1877f2",
                   },
-                  role: "img",
-                  title: "Facebook profile coming soon",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
                 }}
               >
                 <svg
@@ -212,10 +213,11 @@ export default function Footer() {
                     }}
                   ></path>
                 </svg>
-              </span>
-              <span
+              </a>
+              <a
                 {...{
                   className: "zl-social",
+                  href: "https://www.instagram.com/zenticlab",
                   "aria-label": "Instagram",
                   style: {
                     width: "40px",
@@ -228,8 +230,8 @@ export default function Footer() {
                     background:
                       "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)",
                   },
-                  role: "img",
-                  title: "Instagram profile coming soon",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
                 }}
               >
                 <svg
@@ -249,7 +251,7 @@ export default function Footer() {
                   <circle {...{ cx: "12", cy: "12", r: "4" }}></circle>
                   <path {...{ d: "M17.500 6.500h.01", strokeWidth: "2.600" }}></path>
                 </svg>
-              </span>
+              </a>
               <span
                 {...{
                   className: "zl-social",
