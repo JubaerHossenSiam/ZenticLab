@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/designs/Footer";
 import "./designs.css";
@@ -47,6 +48,22 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <Script id="zenticlab-analytics" strategy="afterInteractive">
+          {`(() => {
+            if (!["zenticlab.com", "www.zenticlab.com"].includes(window.location.hostname)) return;
+
+            const measurementId = "G-LQCSN7KRPL";
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () { window.dataLayer.push(arguments); };
+            window.gtag("js", new Date());
+            window.gtag("config", measurementId);
+
+            const tag = document.createElement("script");
+            tag.async = true;
+            tag.src = "https://www.googletagmanager.com/gtag/js?id=" + measurementId;
+            document.head.appendChild(tag);
+          })();`}
+        </Script>
       </body>
     </html>
   );
