@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Talk to Zentic Lab about your website project through WhatsApp or email. Based in Mirpur, Dhaka.",
+  alternates: { canonical: "https://zenticlab.com/contact" },
 };
 export default function Page() {
   return <ContactDesign />;

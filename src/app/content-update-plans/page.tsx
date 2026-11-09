@@ -3,6 +3,7 @@ import ContentUpdateDesign from "@/components/designs/ContentUpdateDesign";
 export const metadata: Metadata = {
   title: "Content Update Plans",
   description: "Get expert help updating website text, images, products, and content.",
+  alternates: { canonical: "https://zenticlab.com/content-update-plans" },
 };
 export default function Page() {
   return <ContentUpdateDesign />;

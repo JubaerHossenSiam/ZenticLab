@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "E-Commerce Website Packages",
   description:
     "Compare online store packages and launch a professional e-commerce website for your business.",
+  alternates: { canonical: "https://zenticlab.com/services/ecommerce" },
 };
 export default function Page() {
   return <EcommerceDesign />;

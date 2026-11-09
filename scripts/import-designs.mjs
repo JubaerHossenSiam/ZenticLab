@@ -270,11 +270,13 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
     slug === "index"
       ? path.join(root, "src/app")
       : path.join(root, "src/app", ...(["ecommerce", "business"].includes(slug) ? ["services", slug] : [slug]));
+  const routePath = "/" + path.relative(path.join(root, "src/app"), route).split(path.sep).join("/");
+  const canonical = new URL(routePath, "https://zenticlab.com").href;
   await writeTsx(
     path.join(route, "page.tsx"),
-    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\nexport const metadata: Metadata = {title:${JSON.stringify(title)},description:${JSON.stringify(description)}};\nexport default function Page(){return <${name} />;}`,
+    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\nexport const metadata: Metadata = {title:${JSON.stringify(title)},description:${JSON.stringify(description)},alternates:{canonical:${JSON.stringify(canonical)}}};\nexport default function Page(){return <${name} />;}`,
   );
-  console.log("Imported /" + path.relative(path.join(root, "src/app"), route).split(path.sep).join("/"));
+  console.log("Imported " + routePath);
 }
 await fs.writeFile(
   path.join(root, "src/app/designs.css"),

@@ -3,6 +3,7 @@ import SecurityMaintenanceDesign from "@/components/designs/SecurityMaintenanceD
 export const metadata: Metadata = {
   title: "Security & Maintenance Plans",
   description: "Protect your website with regular updates, backups, and security maintenance.",
+  alternates: { canonical: "https://zenticlab.com/security-maintenance-plans" },
 };
 export default function Page() {
   return <SecurityMaintenanceDesign />;
