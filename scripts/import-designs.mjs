@@ -15,53 +15,53 @@ await fs.mkdir(path.join(root, "public/images"), { recursive: true });
 const pages = {
   index: [
     "HomeDesign",
-    "Zentic Lab | Websites for Businesses in Bangladesh",
-    "Professional e-commerce and business websites, hosting, and website care in Bangladesh.",
+    "E-Commerce & Business Websites in Bangladesh | Zentic Lab",
+    "No online shop or website yet? We build fast, secure websites that help businesses in Bangladesh sell more. Clear plan and price in writing.",
   ],
   services: [
     "ServicesDesign",
-    "Website Services",
-    "Explore e-commerce and business website services from Zentic Lab in Dhaka, Bangladesh.",
+    "Website Development Services in Bangladesh | Zentic Lab",
+    "See our e-commerce and business website services. Each package includes a logo, custom design, content writing and a fast, secure website. See starting prices.",
   ],
   ecommerce: [
     "EcommerceDesign",
-    "E-Commerce Website Packages",
-    "Compare online store packages and launch a professional e-commerce website for your business.",
+    "E-Commerce Website Development in Bangladesh | Zentic Lab",
+    "Sell online to customers all over Bangladesh. We build custom, fast and secure e-commerce websites. You manage products and orders yourself.",
   ],
   business: [
     "BusinessDesign",
-    "Business Website Packages",
-    "Build a professional business website that helps new clients find and trust your business.",
+    "Business Website Development in Bangladesh | Zentic Lab",
+    "Look trusted online and get more leads. We build custom, fast and secure websites for agencies, consultants and professionals.",
   ],
   "hosting-care": [
     "HostingCareDesign",
-    "Hosting & Care",
-    "Keep your website fast, secure, and up to date with Zentic Lab hosting and website care.",
+    "Website Hosting & Care Plans in Bangladesh | Zentic Lab",
+    "Keep your website fast, safe and up to date. Choose hosting, content updates or security care. Take only what you need, one plan or all.",
   ],
   "domain-hosting-plans": [
     "DomainHostingDesign",
-    "Domain & Hosting Plans",
-    "Compare reliable hosting plans for your website, with help from our team in Dhaka.",
+    "Domain & Hosting Plans in Bangladesh | Zentic Lab",
+    "A .com domain, fast hosting and free SSL, all set up by us. The domain is registered in your name, and the price stays the same every year.",
   ],
   "content-update-plans": [
     "ContentUpdateDesign",
-    "Content Update Plans",
-    "Get expert help updating website text, images, products, and content.",
+    "Website Content Update Plans in Bangladesh | Zentic Lab",
+    "Need to change text, photos or products on your website? Our developers make updates within 24 hours. Choose 2 or 4 hours of help per month.",
   ],
   "security-maintenance-plans": [
     "SecurityMaintenanceDesign",
-    "Security & Maintenance Plans",
-    "Protect your website with regular updates, backups, and security maintenance.",
+    "Website Security & Maintenance Plans | Zentic Lab",
+    "Get monthly software updates, backups and security checks. Choose Essential Care or Complete Care with 24/7 monitoring.",
   ],
   about: [
     "AboutDesign",
-    "About Us",
-    "Meet the Zentic Lab team, a small and focused website studio in Dhaka built on quality and honesty.",
+    "About Zentic Lab | Website Team in Dhaka, Bangladesh",
+    "A small team in Dhaka. You talk directly to the people who build your website. We never sell you more than you need, and put everything in writing.",
   ],
   contact: [
     "ContactDesign",
-    "Contact Us",
-    "Talk to Zentic Lab about your website project through WhatsApp or email. Based in Mirpur, Dhaka.",
+    "Contact Zentic Lab | Book a Free Project Call",
+    "Tell us about your website project on WhatsApp or by email, or book a free project call. We reply within 24 hours. Based in Mirpur, Dhaka.",
   ],
 };
 const blobs = {
@@ -274,7 +274,7 @@ for (const [slug, [name, title, description]] of Object.entries(pages)) {
   const canonical = new URL(routePath, "https://zenticlab.com").href;
   await writeTsx(
     path.join(route, "page.tsx"),
-    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\nexport const metadata: Metadata = {title:${JSON.stringify(title)},description:${JSON.stringify(description)},alternates:{canonical:${JSON.stringify(canonical)}}};\nexport default function Page(){return <${name} />;}`,
+    `import type { Metadata } from 'next';\nimport ${name} from '@/components/designs/${name}';\nexport const metadata: Metadata = {title:{absolute:${JSON.stringify(title)}},description:${JSON.stringify(description)},alternates:{canonical:${JSON.stringify(canonical)}}};\nexport default function Page(){return <${name} />;}`,
   );
   console.log("Imported " + routePath);
 }

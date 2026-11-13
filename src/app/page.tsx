@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import HomeDesign from "@/components/designs/HomeDesign";
 export const metadata: Metadata = {
-  title: "Zentic Lab | Websites for Businesses in Bangladesh",
-  description: "Professional e-commerce and business websites, hosting, and website care in Bangladesh.",
+  title: { absolute: "E-Commerce & Business Websites in Bangladesh | Zentic Lab" },
+  description:
+    "No online shop or website yet? We build fast, secure websites that help businesses in Bangladesh sell more. Clear plan and price in writing.",
   alternates: { canonical: "https://zenticlab.com/" },
 };
 export default function Page() {
