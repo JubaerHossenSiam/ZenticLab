@@ -3730,7 +3730,7 @@ export default function HomeDesign() {
                 }}
               >
                 {
-                  "We have 3+ years of real experience in building websites. We make customized websites that your business really needs."
+                  "We have 3+ years of experience building custom websites that fit your business and your customers’ needs."
                 }
               </p>
             </div>
